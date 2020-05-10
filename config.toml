@@ -1,0 +1,78 @@
+baseURL = "https://tqxr.net"
+languageCode = "en-us"
+title = "What Bird Is That?"
+copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
+
+# theme = "ananke"
+#theme = "npq-hugo"
+theme = "m10c"
+#theme = "Binario"
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+
+pygmentsUseClasses=true
+
+[params]
+  author = "David Walters"
+  description = "Writing things down helps..."
+  keywords = "hugo blog"
+  useAvatar = false
+  avatar = "1F426.svg"
+  microBlogSection = "posts"
+  displayMicroBlog = false
+  displayRecent = true
+  recentMax = 4
+  mail = "mail@example.com"
+  phone = "8888888888"
+  formspreeID = "yourformspreeID"
+  recent_posts_number = 2
+
+
+
+# [sitemap]
+#   changefreq = "monthly"
+#   priority = 0.5
+#   filename = "sitemap.xml"
+
+
+# [params]
+#   favicon = ""
+#   description = "The last theme you'll ever need. Maybe."
+#   facebook = ""
+#   twitter = "https://twitter.com/GoHugoIO"
+#   instagram = ""
+#   youtube = ""
+#   github = ""
+#   gitlab = ""
+#   linkedin = ""
+#   mastodon = ""
+#   slack = ""
+#   stackoverflow = ""
+#   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+#   background_color_class = "bg-black"
+#   featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+#   recent_posts_number = 2
+
+[menu]
+  [[menu.main]]
+    name = "home"
+    pre = "<i class=\"fas fa-home fa-sm\"></i>"
+    url = "/"
+    weight = -9 
+  [[menu.main]]
+    name = "blog"
+    pre = "<i class=\"fas fa-keyboard fa-ms\"></i>"
+    url = "/posts/"
+    weight = -8
+  [[menu.main]]
+    name = "github"
+    pre = "<i class=\"fab fa-github fa-ms\"></i>"
+    url = "https://github.com/whatbirdisthat"
+    weight = -6 
+
