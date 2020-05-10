@@ -2,7 +2,7 @@
 title: "README"
 date: 2020-05-10T00:00:00+10:00
 draft: true
-description: a rant about the way money is wasted
+description: instructions for my future self
 ---
 
 # The hugo site
@@ -14,6 +14,9 @@ description: a rant about the way money is wasted
 ```bash
 brew install hugo
 ```
+
+> remember to make sure it is the 'extended' edition
+> or there will be no SASS and etc
 
 ## Working with Hugo
 
