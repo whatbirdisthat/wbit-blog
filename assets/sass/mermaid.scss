@@ -2,7 +2,7 @@ $message-text-colour: silver;
 
 .messageText {
   stroke: $message-text-colour !important;
-  fill: darken($message-text-colour, 36) !important;
+  fill: lighten($message-text-colour, 36) !important;
 }
 
 body {
