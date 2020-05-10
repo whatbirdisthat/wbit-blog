@@ -32,12 +32,12 @@ hugo new posts/newpost.md
 
 ## To add style
 
-> See the [mermaid example](assets/sass/mermaid.scss)
-> and the [html 'partial'](layouts/partials/mermaid.html)
+> See the [mermaid example](./assets/sass/mermaid.scss)
+> and the [html 'partial'](./layouts/partials/mermaid.html)
 
 To get the theme to load the js and style I had to hack in
-a partial on [the theme base html](themes/m10c/layouts/_default/baseof.html)
+a partial on [the theme base html](./themes/m10c/layouts/_default/baseof.html)
 
 ## Embedding [mermaid](https://mermaid-js.github.io/mermaid/#/examples)
 
-To embed the mermaid, see [begin with disaster](/posts/begin-with-disaster.md)
+To embed the mermaid, see [begin with disaster](./posts/begin-with-disaster.md)
