@@ -38,6 +38,6 @@ hugo new posts/newpost.md
 To get the theme to load the js and style I had to hack in
 a partial on [the theme base html](./themes/m10c/layouts/_default/baseof.html)
 
-## Embedding [mermaid](https://mermaid-js.github.io/mermaid/#/examples)
+## Embedding [mermaid](https://mermaid-js.github.io)
 
-To embed the mermaid, see [begin with disaster](./posts/begin-with-disaster.md)
+To embed the mermaid, see the [mermaid examples](content/posts/mermaid-examples.md)
