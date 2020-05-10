@@ -1,0 +1,20 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<!--
+    file name and path from; https://github.com/matcornic/hugo-theme-learn/blob/master/layouts/shortcodes/mermaid.html
+    shortcode js/html from; https://liveaverage.com/projects/integration-mermaid/
+-->
+<script src="/mermaid.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    window.onload= function() {
+        mermaid.initialize({ 
+        theme: 'dark',
+        themeCSS: '',
+        cloneCssStyles: false,
+        useMaxWidth: true,
+        htmlLabels: false,
+        flowchart: { 
+            curve: 'basis' 
+        }
+    },".language-mermaid");
+}
+</script>

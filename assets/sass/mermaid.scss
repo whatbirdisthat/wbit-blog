@@ -1,0 +1,10 @@
+$message-text-colour: green;
+
+.messageText {
+  stroke: $message-text-colour !important;
+  fill: green !important;
+}
+
+body {
+  color: silver;
+}
