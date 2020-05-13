@@ -1,5 +1,5 @@
 genchromastyles:
-	hugo gen chromastyles --style=vim > static/syntax.css
+	hugo gen chromastyles --style=native > static/syntax.css
 
 serve:
 	hugo server \
