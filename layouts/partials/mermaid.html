@@ -1,9 +1,12 @@
+<link rel="stylesheet" href="/syntax.css" />
 {{ $style := resources.Get "sass/mermaid.scss" | resources.ToCSS }}
 
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
 
-<script src="/mermaid.min.js" type="text/javascript"></script> 
-<script type="text/javascript"> 
-  window.onload = function() { mermaid.init(undefined,".language-mermaid"); } 
+<script src="/mermaid.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  window.onload = function () {
+    mermaid.init(undefined, ".language-mermaid");
+  }
 </script>

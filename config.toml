@@ -1,21 +1,15 @@
 baseURL = "https://tqxr.net"
-languageCode = "en-us"
+languageCode = "en-au"
 title = "What Bird Is That?"
-copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
-
-# theme = "ananke"
-#theme = "npq-hugo"
+copyright = "Copyright © 2020, David Walters."
 theme = "m10c"
-#theme = "Binario"
-
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
 enableRobotsTXT = true
-
-
+enableGitInfo = true
 pygmentsUseClasses=true
 
 [params]

@@ -1,15 +1,14 @@
 ---
 layout: post
-title:  "TEST is a four letter word."
-date:   2016-11-11 18:20:00 +1000
+title: "TEST is a four letter word."
+date: 2016-11-11 18:20:00 +1000
 categories: quality, devops
 ---
-# 'Test' is a four letter word.
 
 ## These days it is so easy to tie ourselves up in knots with one simple word.
 
 Testing is something that ought to be a part of the fabric of the delivery cycle,
-the *skein* of the SDLC.
+the _skein_ of the SDLC.
 
 Analysts should be testing their requirements against both the business and
 the delivery teams, frequently asking "is this what you want?" and "can you build this?"
@@ -34,14 +33,13 @@ documented and advertised.
 The business itself should test the software against the assumption that it actually
 solves a real-world problem, fills a niche, or just generally is worth selling.
 
-All this is *Testing*. A miniature Bullmer stomps about on my blog-stage ranting, 
+All this is _Testing_. A miniature Bullmer stomps about on my blog-stage ranting,
 "Testing testing testing testing testing....." - because the word has become so
 diluted as to be pretty much meaningless now.
 
-
 ## YES! We need to TEST!!
 
-Now we have agreed that we need to test, the business asks that we undergo a 
+Now we have agreed that we need to test, the business asks that we undergo a
 transformation. Developers, please use TDD to develop your work.
 But developer "X" says, "I'd prefer to use BDD for my work". Because we're all
 petrified of making "X" uncomfortable (we don't push people out of their comfort
@@ -60,22 +58,23 @@ is layers of implementation - and each layer is ... "tested" using a slightly
 different protocol.
 
 ## A rant...
+
     TDD, BDD, ATDD, CDD ... All these things exist because thought-leaders have found
     that they needed a slightly different pattern to provide confidence in the area
     they were working on at the time.
-    
+
     TDD is for units. Bottom up. xUnit.
     BDD is for features. Top down. Cukes, Spock.
     ATDD is for Teams - cycles of BDD/TDD to provide completion insight. Scrum/XP.
     CDD is for integration proofing. Pact, Wiremock.
 
 They aren't like hair-styles or OS - they are purpose-specific. The type of testing
-you choose should be dependent on *what you are doing*.
+you choose should be dependent on _what you are doing_.
 
 ## Ok where were we...
 
 We inform the automation testers, "you are software engineers you know!" (they say
-"wow! we've always been sneered at by the 'real' engineers!" - "so you need to 
+"wow! we've always been sneered at by the 'real' engineers!" - "so you need to
 write your acceptance tests using a TDD approach" ...
 
 ## "Oh - but why would you need to test the tests?"
@@ -94,7 +93,3 @@ And it is here where we realise that TEST is a four-letter-word.
 "Testing" is a shorthand way of describing the processes, controls and self-checks
 each member of the team undergoes during the delivery cycle, something each member
 does in a slightly different way - but which ultimately is, as they say, "Testing".
-
-
-
-
