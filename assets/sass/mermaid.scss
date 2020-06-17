@@ -1,10 +1,47 @@
+/*
+
+Semantic definitions of the mermaid graph elements
+for styling. These variables should be used / modified
+when applying a style decision to an element.
+
+*/
+
+$default-body-text-colour: silver;
 $message-text-colour: silver;
+$subgraph-name-label-text-colour: white;
+$subgraph-rect-stroke-colour: darkgrey;
+$subgraph-rect-fill-colour: #101010;
+$edge-path-stroke-colour: #aeaeae;
+
+/*
+
+To maintain semantics, the selectors below must use the variable
+names above, not "hard-coded" values.
+
+*/
 
 .messageText {
+  // stroke: $message-text-colour !important;
+  fill: $message-text-colour !important;
+}
+
+.messageLine1 {
   stroke: $message-text-colour !important;
-  fill: lighten($message-text-colour, 36) !important;
+}
+
+.cluster rect {
+  fill: $subgraph-rect-fill-colour !important;
+  stroke: $subgraph-rect-stroke-colour !important;
+}
+
+.edgePath .path {
+  stroke: $edge-path-stroke-colour !important;
+}
+
+.clusters .label foreignObject div {
+  color: $subgraph-name-label-text-colour !important;
 }
 
 body {
-  color: silver;
+  color: $default-body-text-colour;
 }

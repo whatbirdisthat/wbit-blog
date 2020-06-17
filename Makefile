@@ -2,11 +2,11 @@ genchromastyles:
 	hugo gen chromastyles --style=native > static/syntax.css
 
 serve:
-	hugo server \
+	hugo-server \
 		-D \
 		--disableFastRender \
-		--bind 192.168.56.105 \
-		--baseURL http://192.168.56.105:1313
+		 --bind 192.168.56.105 \
+		 --baseURL http://192.168.56.105:1313
 
 
 clean:

@@ -1,8 +1,18 @@
-baseURL = "https://tqxr.net"
+baseURL = "/"
 languageCode = "en-au"
 title = "What Bird Is That?"
 copyright = "Copyright © 2020, David Walters."
-theme = "m10c"
+#theme = "m10c"
+theme = "hugo-theme-docdock"
+
+
+# pygmentsCodeFences = true
+# pygmentsStyle = "monokailight"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
+
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
@@ -26,6 +36,45 @@ pygmentsUseClasses=true
   phone = "8888888888"
   formspreeID = "yourformspreeID"
   recent_posts_number = 2
+
+  editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+  showVisitedLinks = true # default is false
+  themeStyle = "flex" # "original" or "flex" # default "flex"
+  themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
+  ordersectionsby = "weight" # ordersectionsby = "title"
+  disableHomeIcon = false # default is false
+  disableSearch = false # default is false
+  disableNavChevron = false # set true to hide next/prev chevron, default is false
+  highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+  menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+  enableGitInfo = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+
+[[menu.shortcuts]]
+pre = "<h3>More</h3>"
+name = "<i class='fa fa-github'></i> <label>Github repo</label>"
+identifier = "ds"
+url = "https://github.com/vjeantet/hugo-theme-docdock"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-cloud-download'></i> <label>Download</label>"
+url = "https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bookmark'></i> <label>Hugo Documentation</label>"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bullhorn'></i> <label>Credits</label>"
+url = "/credits"
+weight = 30
 
 
 
@@ -58,7 +107,7 @@ pygmentsUseClasses=true
     name = "home"
     pre = "<i class=\"fas fa-home fa-sm\"></i>"
     url = "/"
-    weight = -9 
+    weight = -9
   [[menu.main]]
     name = "blog"
     pre = "<i class=\"fas fa-keyboard fa-ms\"></i>"
@@ -68,5 +117,4 @@ pygmentsUseClasses=true
     name = "github"
     pre = "<i class=\"fab fa-github fa-ms\"></i>"
     url = "https://github.com/whatbirdisthat"
-    weight = -6 
-
+    weight = -6

@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "prettier.tabWidth": 2,
+	"editor.fontFamily": "'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace",
+	"editor.fontWeight": "100",
+	"editor.fontSize": 12
+  },
+  "editor.fontLigatures": true
+}

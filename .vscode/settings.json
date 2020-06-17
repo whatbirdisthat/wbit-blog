@@ -1,0 +1,10 @@
+{
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.extension.print.theme": "dark",
+    "markdown.extension.syntax.plainTheme": true,
+    "markdown.extension.toc.githubCompatibility": true,
+    "markdown.extension.toc.orderedList": true,
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "markdownlint.run": "onSave"
+}

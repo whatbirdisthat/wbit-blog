@@ -1,5 +1,5 @@
 ---
-title: "Gpg Hello World"
+title: "GPG Hello World"
 date: 2020-05-11T02:49:18+10:00
 draft: true
 ---
@@ -7,7 +7,6 @@ draft: true
 Alice, Bobby and Charlie want to share information privately.
 
 ## ALICE
-
 
 Generate a key.
 
@@ -39,8 +38,7 @@ Export public key for sharing with Alice.
 gpg --armor --output /files/bobkey.asc --export "BOBBY"
 ```
 
-ALICE
----
+## ALICE
 
 Import BOB's key so she can encrypt files for him to decrypt
 
@@ -48,16 +46,16 @@ Import BOB's key so she can encrypt files for him to decrypt
 gpg --import /files/bobkey.asc
 ```
 
-BOB
----
+## BOB
+
 Import ALICE's key so he can encrypt files for her to decrypt
 
 ```bash
 gpg --import /files/alicekey.asc
 ```
 
-CHARLIE
----
+## CHARLIE
+
 Import ALICE's and BOBBY's keys so he can transfer encrypted messages
 which both ALICE and BOBBY can read.
 
@@ -84,10 +82,10 @@ The `trust` command will show a list of trust levels to choose from:
 ```gpg
 gpg> trust
 pub  rsa2048/BEC092243EF4FB07
-        created: 2017-02-28  expires: 2019-02-28  usage: SC  
+        created: 2017-02-28  expires: 2019-02-28  usage: SC
         trust: unknown       validity: unknown
 sub  rsa2048/011DDAAD4EBD4949
-        created: 2017-02-28  expires: 2019-02-28  usage: E   
+        created: 2017-02-28  expires: 2019-02-28  usage: E
 [ unknown] (1). ALICE <alice@local>
 
 Please decide how far you trust this user to correctly verify other users' keys
@@ -112,10 +110,10 @@ set it to a lower level, but if you do you will be constantly prompted to
 `use this key anyway?` whenever you are encrypting a file ...
 
 Now ALICE's key is trusted and when we encrypt a file GPG will not warn CHARLIE
-about the 'untrusted' nature of ALICE's key. 
+about the 'untrusted' nature of ALICE's key.
 
 ```bash
-gpg -er ALICE sample.txt 
+gpg -er ALICE sample.txt
 gpg: checking the trustdb
 gpg: marginals needed: 3  completes needed: 1  trust model: pgp
 gpg: depth: 0  valid:   2  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 2u
@@ -138,7 +136,7 @@ It is NOT certain that the key belongs to the person named
 in the user ID.  If you *really* know what you are doing,
 you may answer the next question with yes.
 
-Use this key anyway? (y/N) 
+Use this key anyway? (y/N)
 ```
 
 Following the steps above to set the trust level for BOBBY's key:
@@ -171,8 +169,7 @@ uid           [ultimate] ALICE <alice@local>
 sub   rsa2048 2017-02-28 [E] [expires: 2019-02-28]
 ```
 
-CHARLIE
----
+## CHARLIE
 
 ```bash
 gpg -ae -r ALICE -r BOBBY sample.txt
@@ -186,8 +183,7 @@ Now there is a file called `sample.txt.asc` which is an "ascii-armoured"
 encrypted version of the file, suitable for pasting into an email,
 a chat program or whatever.
 
-ALICE
----
+## ALICE
 
 ```bash
 root@alice:/files# gpg -d sample.txt.asc
@@ -203,14 +199,13 @@ here is another line
 
 
 this is the last line.
-root@alice:/files#     
+root@alice:/files#
 ```
 
 The decryption report does not show BOBBY's key when we decrypt on ALICE's
 machine - ALICE never imported BOBBY's key.
 
-BOBBY
----
+## BOBBY
 
 ```bash
 root@bob:/files# gpg -d sample.txt.asc
