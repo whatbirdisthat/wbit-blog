@@ -1,13 +1,22 @@
 genchromastyles:
 	hugo gen chromastyles --style=native > static/syntax.css
 
-serve:
+serve-container:
 	hugo-server \
-		-D \
-		--disableFastRender \
-		 --bind 192.168.56.105 \
-		 --baseURL http://192.168.56.105:1313
+	-D \
+	--disableFastRender \
+	--bind 0.0.0.0 \
+	--baseURL http://192.168.56.105:1313 \
+	--navigateToChanged \
+	--forceSyncStatic \
+	--cleanDestinationDir
 
+serve:
+	hugo server \
+	-D \
+	--bind 0.0.0.0 \
+	--baseURL http://192.168.56.108:1313 \
+	--navigateToChanged
 
 clean:
 	hugo --cleanDestinationDir

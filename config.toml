@@ -2,8 +2,7 @@ baseURL = "/"
 languageCode = "en-au"
 title = "What Bird Is That?"
 copyright = "Copyright © 2020, David Walters."
-#theme = "m10c"
-theme = "hugo-theme-docdock"
+theme = "m10c"
 
 
 # pygmentsCodeFences = true
@@ -15,12 +14,12 @@ enableMissingTranslationPlaceholders = false
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
-SectionPagesMenu = "main"
-Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = ""
-enableRobotsTXT = true
-enableGitInfo = true
-pygmentsUseClasses=true
+# SectionPagesMenu = "main"
+# Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
+# googleAnalytics = ""
+# enableRobotsTXT = true
+# enableGitInfo = true
+# pygmentsUseClasses=true
 
 [params]
   author = "David Walters"
@@ -29,28 +28,28 @@ pygmentsUseClasses=true
   useAvatar = false
   avatar = "1F426.svg"
   microBlogSection = "posts"
-  displayMicroBlog = false
+  displayMicroBlog = true
   displayRecent = true
-  recentMax = 4
+  recentMax = 8
   mail = "mail@example.com"
   phone = "8888888888"
   formspreeID = "yourformspreeID"
   recent_posts_number = 2
 
-  editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
-  showVisitedLinks = true # default is false
-  themeStyle = "flex" # "original" or "flex" # default "flex"
-  themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
-  ordersectionsby = "weight" # ordersectionsby = "title"
-  disableHomeIcon = false # default is false
-  disableSearch = false # default is false
-  disableNavChevron = false # set true to hide next/prev chevron, default is false
-  highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
-  menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
-  enableGitInfo = true
+  # editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+  # showVisitedLinks = true # default is false
+  # themeStyle = "flex" # "original" or "flex" # default "flex"
+  # themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
+  # ordersectionsby = "weight" # ordersectionsby = "title"
+  # disableHomeIcon = false # default is false
+  # disableSearch = false # default is false
+  # disableNavChevron = false # set true to hide next/prev chevron, default is false
+  # highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+  # menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+  # enableGitInfo = true
 
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
+# [outputs]
+# home = [ "HTML", "RSS", "JSON"]
 
 
 [[menu.shortcuts]]
@@ -102,19 +101,19 @@ weight = 30
 #   featured_image = "/images/gohugo-default-sample-hero-image.jpg"
 #   recent_posts_number = 2
 
-[menu]
-  [[menu.main]]
-    name = "home"
-    pre = "<i class=\"fas fa-home fa-sm\"></i>"
-    url = "/"
-    weight = -9
-  [[menu.main]]
-    name = "blog"
-    pre = "<i class=\"fas fa-keyboard fa-ms\"></i>"
-    url = "/posts/"
-    weight = -8
-  [[menu.main]]
-    name = "github"
-    pre = "<i class=\"fab fa-github fa-ms\"></i>"
-    url = "https://github.com/whatbirdisthat"
-    weight = -6
+# [menu]
+#   [[menu.main]]
+#     name = "home"
+#     pre = "<i class=\"fas fa-home fa-sm\"></i>"
+#     url = "/"
+#     weight = -9
+#   [[menu.main]]
+#     name = "blog"
+#     pre = "<i class=\"fas fa-keyboard fa-ms\"></i>"
+#     url = "/posts/"
+#     weight = -8
+#   [[menu.main]]
+#     name = "github"
+#     pre = "<i class=\"fab fa-github fa-ms\"></i>"
+#     url = "https://github.com/whatbirdisthat"
+#     weight = -6
