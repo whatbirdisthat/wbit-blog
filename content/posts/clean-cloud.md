@@ -4,7 +4,7 @@ date: 2020-06-29T22:22:51+10:00
 draft: true
 ---
 
-## A set of OKRs that can be easily assimilated into an enterprise IT culture
+## A set of things that can be easily assimilated into an enterprise IT culture
 
 Enterprise IT is rife with litter.
 
