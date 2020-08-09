@@ -60,7 +60,7 @@ When selling a product into a business, you may be selling the partnership.</des
       <pubDate>Mon, 29 Jun 2020 22:22:51 +1000</pubDate>
       
       <guid>/posts/clean-cloud/</guid>
-      <description>A set of OKRs that can be easily assimilated into an enterprise IT culture Enterprise IT is rife with litter.
+      <description>A set of things that can be easily assimilated into an enterprise IT culture Enterprise IT is rife with litter.
 There are EC2 instances running for months, called TEST001.
 There are S3 buckets with no objects in them, that have no tags.
 There are entire features without a single automated test.
