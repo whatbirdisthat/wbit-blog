@@ -22,5 +22,8 @@ clean:
 	hugo --cleanDestinationDir
 
 build:
+	hugo --minify --cleanDestinationDir
+
+deploy:
 	hugo deploy --baseURL "https://tqxr.net" --dryRun -e production
 

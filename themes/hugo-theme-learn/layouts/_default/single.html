@@ -1,5 +1,15 @@
 {{ partial "header.html" . }}
 
+<p>
+	🗓️ {{ dateFormat "2006-01-02" .Lastmod }}
+</p>
+{{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+{{ $minutes := math.Floor (div $readTime 60) }}
+{{ $seconds := mod $readTime 60 }}
+<p>
+	⏲️ Reading time: {{ $minutes }} {{ cond (eq $minutes 1) "minute" "minutes" }} and {{ $seconds }} {{ cond (eq $seconds 1) "second" "seconds" }}.
+</p>
+
 {{ .Content }}
 
 <footer class="footline">

@@ -1,0 +1,9 @@
+{
+    "@med": {
+        "prefix": "@med",
+        "body": [
+            "@media only screen and (max-width: $1) {\n\t$2{\n\t\t$3\n\t}\n}"
+        ],
+        "description": "Add media query. Use Tab key 3 times (1st = max-width, 2nd = selector, 3rd = properties)"
+    }
+}
