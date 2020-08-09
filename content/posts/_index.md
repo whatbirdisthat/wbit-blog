@@ -3,7 +3,7 @@ menu:
     after:
         name: blog
         weight: 5
-title: Blog
+title: A Blog
 ---
 
-{{% children depth=999 %}}
+{{% children depth='999' %}}

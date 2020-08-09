@@ -20,7 +20,7 @@ There are overprovisioned servers, long-running environments, bloated taxonomies
 
 Our clouds are not clean.
 
-The Clean Cloud foundation relies on three core OKRs:
+The Clean Cloud foundation relies on three core things:
 
 1. Test EVERYTHING to provide PROOF that it WORKS and is FIT FOR PURPOSE
 2. Automate EVERYTHING to provide healthy, right-sized infrastructure

@@ -5,7 +5,7 @@ draft: true
 description: a simple serverless stack
 ---
 
-# Authorised Greeting
+## Authorised Greeting
 
 A simple "workload" for greeting "known" or "unknown" visitors to a site.
 
