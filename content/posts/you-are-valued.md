@@ -1,7 +1,7 @@
 ---
 title: "You Are Valued"
 date: 2020-08-02T13:50:50+10:00
-draft: true
+draft: false
 ---
 
 ## Sincerity is meaningless

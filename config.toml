@@ -23,7 +23,7 @@ MetaDataFormat = "yaml"
 # pygmentsUseClasses=true
 
 [params]
-author = "David Walters"
+author = "What Bird Is That?"
 avatar = "1F426.svg"
 description = "Writing things down helps..."
 displayMicroBlog = true

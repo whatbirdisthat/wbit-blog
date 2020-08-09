@@ -1,37 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>devops on What Bird Is That?</title>
-    <link>/categories/devops/</link>
-    <description>Recent content in devops on What Bird Is That?</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-au</language>
-    <copyright>Copyright © 2020, David Walters.</copyright>
-    <lastBuildDate>Fri, 22 Jul 2016 14:20:55 +1000</lastBuildDate>
-    
-	<atom:link href="/categories/devops/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Script the world</title>
-      <link>/posts/applied-devops/</link>
-      <pubDate>Fri, 22 Jul 2016 14:20:55 +1000</pubDate>
-      
-      <guid>/posts/applied-devops/</guid>
-      <description>Applied Devops Script the world Software entities typically evolve through a common set of phases:
- 1. Design2. Construct3. Race4. Crash5. Repair6. goto 3Early devops used the scripting of infrastructure to propel software at low friction and low variance, achieving unprecedented levels of control and reliability.
-Devops reaches further than just the infra team. It connects all disciplines  Devops thinking brought &amp;lsquo;master == prod&amp;rsquo;.</description>
-    </item>
-    
-    <item>
-      <title>Reliable, Evolving, Agile, Lean</title>
-      <link>/posts/real-blog/</link>
-      <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/real-blog/</guid>
-      <description>./realblog Reliable Evolving Agile Lean  Warning: Star Wars Quotes
- Software that survives. A lot of software today is not given a chance to survive. It&amp;rsquo;s written up, posted on the web, and taken down all within days. This kind of code is &amp;lsquo;firefly code&amp;rsquo; and sometimes that&amp;rsquo;s what we need to get our message across. We know it&amp;rsquo;s only just barely working. We have factored that into our plan.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>devops on What Bird Is That?</title><link>/categories/devops/</link><description>Recent content in devops on What Bird Is That?</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><copyright>Copyright © 2020, David Walters.</copyright><lastBuildDate>Thu, 21 Jul 2016 00:00:00 +0000</lastBuildDate><atom:link href="/categories/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Reliable, Evolving, Agile, Lean</title><link>/posts/real-blog/</link><pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate><guid>/posts/real-blog/</guid><description>./realblog Reliable Evolving Agile Lean Warning: Star Wars Quotes
+Software that survives. A lot of software today is not given a chance to survive. It&amp;rsquo;s written up, posted on the web, and taken down all within days. This kind of code is &amp;lsquo;firefly code&amp;rsquo; and sometimes that&amp;rsquo;s what we need to get our message across. We know it&amp;rsquo;s only just barely working. We have factored that into our plan.</description></item></channel></rss>

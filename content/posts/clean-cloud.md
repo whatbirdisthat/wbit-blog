@@ -1,7 +1,7 @@
 ---
 title: "Clean Cloud"
 date: 2020-06-29T22:22:51+10:00
-draft: true
+draft: false
 ---
 
 ## A set of things that can be easily assimilated into an enterprise IT culture

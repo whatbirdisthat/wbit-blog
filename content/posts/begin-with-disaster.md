@@ -1,7 +1,7 @@
 ---
 title: "Begin With Disaster"
 date: 2020-05-11T01:28:44+10:00
-draft: true
+draft: false
 description: a rant about the way money is wasted
 ---
 

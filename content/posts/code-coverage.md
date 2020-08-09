@@ -3,6 +3,7 @@ layout: post
 title: "100% Coverage is only the beginning"
 date: 2016-07-15 14:20:55 +1000
 categories: quality, devops
+draft: false
 ---
 
 ### Code coverage gives us a solid foundation for delivery confidence, but it's not the only way to boost delivery confidence.

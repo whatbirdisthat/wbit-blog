@@ -1,26 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Learning on What Bird Is That?</title>
-    <link>/tags/learning/</link>
-    <description>Recent content in Learning on What Bird Is That?</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-au</language>
-    <copyright>Copyright © 2020, David Walters.</copyright>
-    <lastBuildDate>Thu, 21 Jul 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/learning/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Reliable, Evolving, Agile, Lean</title>
-      <link>/posts/real-blog/</link>
-      <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/real-blog/</guid>
-      <description>./realblog Reliable Evolving Agile Lean  Warning: Star Wars Quotes
- Software that survives. A lot of software today is not given a chance to survive. It&amp;rsquo;s written up, posted on the web, and taken down all within days. This kind of code is &amp;lsquo;firefly code&amp;rsquo; and sometimes that&amp;rsquo;s what we need to get our message across. We know it&amp;rsquo;s only just barely working. We have factored that into our plan.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learning on What Bird Is That?</title><link>/tags/learning/</link><description>Recent content in Learning on What Bird Is That?</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><copyright>Copyright © 2020, David Walters.</copyright><lastBuildDate>Thu, 21 Jul 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/learning/index.xml" rel="self" type="application/rss+xml"/><item><title>Reliable, Evolving, Agile, Lean</title><link>/posts/real-blog/</link><pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate><guid>/posts/real-blog/</guid><description>./realblog Reliable Evolving Agile Lean Warning: Star Wars Quotes
+Software that survives. A lot of software today is not given a chance to survive. It&amp;rsquo;s written up, posted on the web, and taken down all within days. This kind of code is &amp;lsquo;firefly code&amp;rsquo; and sometimes that&amp;rsquo;s what we need to get our message across. We know it&amp;rsquo;s only just barely working. We have factored that into our plan.</description></item></channel></rss>

@@ -3,6 +3,7 @@ layout: post
 title: "Script the world"
 date: 2016-07-22 14:20:55 +1000
 categories: devops
+draft: true
 ---
 
 # Applied Devops
@@ -25,9 +26,9 @@ achieving unprecedented levels of control and reliability.
 
 ## Devops reaches further than just the infra team. It connects all disciplines
 
-- Devops thinking brought 'master == prod'.
-- Devops and chaos monkey are like the chicken and the egg.
-- It has been said that Devops is 'ops for the delivery machines'.
+-   Devops thinking brought 'master == prod'.
+-   Devops and chaos monkey are like the chicken and the egg.
+-   It has been said that Devops is 'ops for the delivery machines'.
 
 ## Repeatability
 

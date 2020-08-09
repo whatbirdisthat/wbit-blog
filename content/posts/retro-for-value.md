@@ -1,7 +1,7 @@
 ---
 title: "Retro for Value"
 date: 2020-08-08T17:58:45+10:00
-draft: true
+draft: false
 ---
 
 ## Retrospectives and the Tightest Possible Feedback Loop

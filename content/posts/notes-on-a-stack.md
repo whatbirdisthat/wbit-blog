@@ -1,7 +1,7 @@
 ---
 title: "Notes on a stack"
 date: 2020-05-15T09:23:22+10:00
-draft: true
+draft: false
 description: a simple serverless stack
 ---
 
