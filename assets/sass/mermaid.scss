@@ -21,27 +21,27 @@ names above, not "hard-coded" values.
 */
 
 .messageText {
-  // stroke: $message-text-colour !important;
-  fill: $message-text-colour !important;
+    // stroke: $message-text-colour !important;
+    fill: $message-text-colour !important;
 }
 
 .messageLine1 {
-  stroke: $message-text-colour !important;
+    stroke: $message-text-colour !important;
 }
 
 .cluster rect {
-  fill: $subgraph-rect-fill-colour !important;
-  stroke: $subgraph-rect-stroke-colour !important;
+    fill: $subgraph-rect-fill-colour !important;
+    stroke: $subgraph-rect-stroke-colour !important;
 }
 
 .edgePath .path {
-  stroke: $edge-path-stroke-colour !important;
+    stroke: $edge-path-stroke-colour !important;
 }
 
 .clusters .label foreignObject div {
-  color: $subgraph-name-label-text-colour !important;
+    color: $subgraph-name-label-text-colour !important;
 }
 
 body {
-  color: $default-body-text-colour;
+    color: $default-body-text-colour;
 }
