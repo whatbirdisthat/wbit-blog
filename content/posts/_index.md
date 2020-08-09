@@ -6,4 +6,4 @@ menu:
 title: A Blog
 ---
 
-{{% children depth='999' %}}
+{{% children depth="999" %}}
