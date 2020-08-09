@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wbits on What Bird Is That?</title>
+    <link>/</link>
+    <description>Recent content in wbits on What Bird Is That?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright © 2020, David Walters.</copyright>
+    <lastBuildDate>Sat, 01 Aug 2020 15:52:03 +1000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Retro Is Broken</title>
+      <link>/posts/retro-is-broken/</link>
+      <pubDate>Sat, 01 Aug 2020 15:52:03 +1000</pubDate>
+      
+      <guid>/posts/retro-is-broken/</guid>
+      <description>Delivery teams are focusing on the Wrong Things I have participated in more Retrospectives than I can count. Years and years of working with dev teams has given me an insight into some antipatterns which are causing the failure of not just continuous improvement, but are causing teams to actually diminish their effectiveness and productivity.
+Antipattern #1 : It&amp;rsquo;s all about US So many times I have seen super-awesome change-agents, transformation coaches, Agile leaders, practice leads (and more) who are playing the &amp;ldquo;popularity contest&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>TEST is a four letter word.</title>
+      <link>/posts/test-is-a-four-letter-word/</link>
+      <pubDate>Fri, 11 Nov 2016 18:20:00 +1000</pubDate>
+      
+      <guid>/posts/test-is-a-four-letter-word/</guid>
+      <description>These days it is so easy to tie ourselves up in knots with one simple word. Testing is something that ought to be a part of the fabric of the delivery cycle, the skein of the SDLC.
+Analysts should be testing their requirements against both the business and the delivery teams, frequently asking &amp;ldquo;is this what you want?&amp;rdquo; and &amp;ldquo;can you build this?&amp;rdquo; so as to gain rapid feedback about the direction they are leading the software.</description>
+    </item>
+    
+    <item>
+      <title>Script the world</title>
+      <link>/posts/applied-devops/</link>
+      <pubDate>Fri, 22 Jul 2016 14:20:55 +1000</pubDate>
+      
+      <guid>/posts/applied-devops/</guid>
+      <description>Applied Devops Script the world Software entities typically evolve through a common set of phases:
+ 1. Design2. Construct3. Race4. Crash5. Repair6. goto 3Early devops used the scripting of infrastructure to propel software at low friction and low variance, achieving unprecedented levels of control and reliability.
+Devops reaches further than just the infra team. It connects all disciplines  Devops thinking brought &amp;lsquo;master == prod&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>Reliable, Evolving, Agile, Lean</title>
+      <link>/posts/real-blog/</link>
+      <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/real-blog/</guid>
+      <description>./realblog Reliable Evolving Agile Lean  Warning: Star Wars Quotes
+ Software that survives. A lot of software today is not given a chance to survive. It&amp;rsquo;s written up, posted on the web, and taken down all within days. This kind of code is &amp;lsquo;firefly code&amp;rsquo; and sometimes that&amp;rsquo;s what we need to get our message across. We know it&amp;rsquo;s only just barely working. We have factored that into our plan.</description>
+    </item>
+    
+    <item>
+      <title>100% Coverage is only the beginning</title>
+      <link>/posts/code-coverage/</link>
+      <pubDate>Fri, 15 Jul 2016 14:20:55 +1000</pubDate>
+      
+      <guid>/posts/code-coverage/</guid>
+      <description>Code coverage gives us a solid foundation for delivery confidence, but it&amp;rsquo;s not the only way to boost delivery confidence. Confidence: the goal of a quality-focused delivery team. Code confidence is attained through rigorous and frequently repeated testing of the system against a raft of behavioural expectations.
+These expectations form the specifications of the system and in fact document the system: both the functioning system, and the desires of the business that commissioned the system.</description>
+    </item>
+    
+  </channel>
+</rss>

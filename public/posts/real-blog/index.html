@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.72.0" />
+    <meta name="description" content="Writing things down helps...">
+<meta name="author" content="David Walters">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Reliable, Evolving, Agile, Lean :: What Bird Is That?</title>
+
+    
+    <link href="/css/nucleus.css?1596967680" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1596967680" rel="stylesheet">
+    <link href="/css/hybrid.css?1596967680" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1596967680" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1596967680" rel="stylesheet">
+    <link href="/css/auto-complete.css?1596967680" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1596967680" rel="stylesheet">
+    <link href="/css/theme.css?1596967680" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1596967680" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1596967680"></script>
+
+<link rel="stylesheet" href="/syntax.css" />
+
+
+<link rel="stylesheet" href="/sass/mermaid.css" />
+
+
+<link rel="stylesheet" href="/sass/hints-colours.css" />
+
+<script src="/mermaid.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        mermaid.init(undefined, ".language-mermaid");
+    };
+</script>
+
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+<link rel="stylesheet" href="/sass/wbits.css" />
+
+  </head>
+  <body class="" data-url="/posts/real-blog/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <svg
+    id="emoji"
+    style="width: 70%; height: 70%;"
+    viewBox="0 0 72 72"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="color">
+      <path
+        fill="#6A462F"
+        stroke="none"
+        d="M40.203,22c0,0,3.1218-9,11.4467-4c0,0,8.585,0.75,8.9753,3.375c0,0-7.9346,1.625-10.0159,5.625 s3.1218,7-5.3331,15.625c0,0-4.0324,4.375-10.276,4.375c0,0-22,3-25,0"
+      />
+      <path
+        fill="#A57939"
+        stroke="none"
+        d="M10.125,46.875C10.125,46.875,35,24,43,25s2,13.25-5.5,17.625S10.125,46.875,10.125,46.875z"
+      />
+    </g>
+    <g id="hair" />
+    <g id="skin" />
+    <g id="skin-shadow" />
+    <g id="line">
+      <line
+        x1="32.625"
+        x2="37"
+        y1="55.625"
+        y2="54"
+        fill="none"
+        stroke="#000000"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-miterlimit="10"
+        stroke-width="2"
+      />
+      <path
+        fill="#000000"
+        stroke="none"
+        d="M42.8504,29.4692c-0.7444-0.1428-0.9348,0.5114-0.9348,0.5114h-0.0005c-0.6837,2.166-3.0652,7.1369-10.4871,10.0829 l0.006,0.0082c0,0-0.7619,0.2029-0.443,1.0278c0.2757,0.7122,0.9802,0.5552,1.1667,0.4988 c8.3025-3.3272,10.7819-9.1109,11.4476-11.3398C43.6638,30.0615,43.5899,29.6108,42.8504,29.4692z"
+      />
+      <path
+        fill="none"
+        stroke="#000000"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-miterlimit="10"
+        stroke-width="2"
+        d="M31.625,40.875C31.625,40.875,40,39,43,29"
+      />
+      <path
+        fill="none"
+        stroke="#000000"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-miterlimit="10"
+        stroke-width="2"
+        d="M41,22c0,0,3-9,11-4c0,0,8.25,0.75,8.625,3.375C60.625,21.375,53,23,51,27s3,7-5.125,15.625C45.875,42.625,42,47,36,47l-1,2l2,5 l6,1"
+      />
+      <path
+        fill="none"
+        stroke="#000000"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-miterlimit="10"
+        stroke-width="2"
+        d="M10.125,46.875C10.125,46.875,35,24,43,25s2,13.25-5.5,17.625S10.125,46.875,10.125,46.875z"
+      />
+    </g>
+  </svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1596967680"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1596967680"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1596967680"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/" title="A Blog" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/posts/">
+          A Blog
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/retro-is-broken/" title="Retro Is Broken" class="dd-item ">
+        <a href="/posts/retro-is-broken/">
+        Retro Is Broken
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/test-is-a-four-letter-word/" title="TEST is a four letter word." class="dd-item ">
+        <a href="/posts/test-is-a-four-letter-word/">
+        TEST is a four letter word.
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/applied-devops/" title="Script the world" class="dd-item ">
+        <a href="/posts/applied-devops/">
+        Script the world
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/real-blog/" title="Reliable, Evolving, Agile, Lean" class="dd-item active">
+        <a href="/posts/real-blog/">
+        Reliable, Evolving, Agile, Lean
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/code-coverage/" title="100% Coverage is only the beginning" class="dd-item ">
+        <a href="/posts/code-coverage/">
+        100% Coverage is only the beginning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>wbits</a> > <a href='/posts/'>A Blog</a> > Reliable, Evolving, Agile, Lean
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#reliable-evolving-agile-lean"><code>Reliable Evolving Agile Lean</code></a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#reliability">Reliability</a></li>
+        <li><a href="#evolution">Evolution</a></li>
+        <li><a href="#agility">Agility</a></li>
+        <li><a href="#leanitude">Leanitude</a></li>
+      </ul>
+    </li>
+    <li><a href="#real-software">REAL software</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/learning">Learning</a>
+
+  <a class="tag-link" href="/tags/continuous-integration">Continuous Integration</a>
+
+  <a class="tag-link" href="/tags/continuous-delivery">Continuous Delivery</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Reliable, Evolving, Agile, Lean
+            </h1>
+          
+
+        
+
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./realblog
+</code></pre></div><h2 id="reliable-evolving-agile-lean"><code>Reliable Evolving Agile Lean</code></h2>
+<blockquote>
+<p><em>Warning: Star Wars Quotes</em></p>
+</blockquote>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="software-that-survives">Software that survives.</h1>
+<p>A lot of software today is not given a chance to survive. It&rsquo;s written up, posted on the web, and taken down
+all within days. This kind of code is &lsquo;firefly code&rsquo; and sometimes that&rsquo;s what we need to get our message across.
+We know it&rsquo;s only just barely working. We have factored that into our plan.</p>
+<p>Sometimes, however, software is <strong>sold</strong> either as a service or system. If the business wishes to retain
+consumers, one way to put downward pressure on churn rates is through-</p>
+<h3 id="reliability">Reliability</h3>
+<blockquote>
+<p>&ldquo;Try not: <em>do</em> or <em>do not</em>, there is no try.&rdquo;</p>
+</blockquote>
+<p>Software that is <strong>Reliable</strong> can be sold with <strong>Confidence</strong>. Confidence is one of those amazing fuels
+which propel the software into the wider arena. When consumers of software are confident in the software,
+their productivity is unimpeded by the software. When producers of the software are confident in the software,
+the producers are able to make claims about the software which will attract more consumers to the software.</p>
+<p>An organisation that offers reliability packaged into its array of products and services will attract
+repeat business, and reputation will build for that organisation whose software is rigorously tested
+before it is released onto the market.</p>
+<h3 id="evolution">Evolution</h3>
+<blockquote>
+<p>&ldquo;Be mindful of your surroundings&rdquo;</p>
+</blockquote>
+<p>Software that is evolving is malleable, responding to external pressure. It is the harnessing of this property
+that allows producers of software to react to business forces.
+A <strong><a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a></strong> foundation will prepare
+the software for continued malleability, allowing it to grow and change with the consumers of that software.</p>
+<p>Evolution underpins the software&rsquo;s ability to remain relevant. To stay in use, software needs to add and remove
+features and sometimes split or merge with other software. Business <em>systems</em> utilise software <em>ecosystems</em> and
+the application of certain survival traits found in observed ecosystems will aid the software in its continued
+survival.</p>
+<h3 id="agility">Agility</h3>
+<blockquote>
+<p>&ldquo;Feel, don&rsquo;t think&rdquo;</p>
+</blockquote>
+<p>Software Agility is found when application code follows a set of design principles which provide patterns for
+first-commit implementations. Patterns like <code>Singleton</code>, <code>Active Record</code>, <code>Composite Object</code> and <code>Factory</code> can 
+greatly improve a team&rsquo;s ability not only to develop applications quickly, but to <strong>effectively communicate through
+a shared lexicon</strong>.</p>
+<p>Using a suite of unit tests to document application <em>design</em> bridges the gap between consumer and provider
+design documentation. Using language that is shared across disciplines (such as <code>As, I, So</code>, and <code>Given, When, Then</code>)
+for design feature descriptions, linking requirements to code using a bridging language like
+<a href="https://cucumber.io/docs/reference">Gherkin</a> to describe in detail the consumer scenarios the application
+is required to perform facilitates the clarity of communication required to effectively produce software that
+will not only survive, but <em>thrive</em>.</p>
+<p>Using a common, portable design language from requirements through development to delivery is key to
+controlling the inevitable variance (from idea to reality) encountered during the production of a 
+software system. Those simple phrasings listed above can bind the vision to the reality in a way that
+is not possible otherwise. Providing a set of automated proofs that each design statement
+(or <em>acceptance criterion</em>) has been adequately met by the software gives all stakeholders confidence that
+the software is meeting the needs of the consumer.</p>
+<h3 id="leanitude">Leanitude</h3>
+<blockquote>
+<p>&ldquo;Quicker, easier, more seductive the dark side is.&rdquo;</p>
+</blockquote>
+<p>If we read our <a href="./features/scalable_architecture.feature">scalable_architecture</a> feature we will find that
+architectures that are implemented &ldquo;because we might strike it lucky&rdquo; actually just drain money from our bank
+account, and don&rsquo;t provide us with any <em>value</em>.</p>
+<p><a href="https://codeship.com/projects/163749"> <img src="https://codeship.com/projects/78745f10-2ee2-0134-93e4-5ebc8f268022/status?branch=master" alt="Codeship Status for whatbirdisthat/realblog"></a></p>
+<p>The feature describes the behaviour of IT/OPS departments who over-provision their infrastructure
+based on the idea that a one-time-spike in load might &ldquo;bring down the site&rdquo;. As we can see from the 
+<a href="https://www.codeship.io">codeship</a> status - this fails to deliver on leanitude.</p>
+<p>Maintaining a <em>Lean Attitude</em> throughout design and construction phase is key to providing an agile, evolving
+and reliable system that has a high likelihood of survival. This kind of attitude informs the designers and
+implementers as to the patterns they choose when developing the services representing the feature-set of both
+the inward and outward interface to the application.</p>
+<p>Leanitude gives construction and operations the freedom to question everything during maintenance of an
+application: from how a message bus is implemented, to &ldquo;do we even need a message bus?&rdquo;. In development,
+importance is placed on <em>how to remove code</em> 
+(using a combination of <a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">YAGNI</a> and 
+<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>).
+In operations, this means using architectures highly tuned to the current load. Leanitude says,
+&ldquo;We don&rsquo;t overprovision, we scale&rdquo;.</p>
+<h2 id="real-software">REAL software</h2>
+<blockquote>
+<p>&ldquo;When 900 years old you reach&hellip;&rdquo;</p>
+</blockquote>
+<p>REAL software is software that uses four key techniques from the real world, as observed in successful
+inhabitants of planet Earth. These four techniques when combined with principles from DevOps, Scrum,
+ATDD and LEAN can help spin up a quality product and keep it running. Apply a little thought to this formula:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// some code (I&#39;m told code in posts is cool)
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">LEANITUDE</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;COOL&#34;</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">COOL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;COOL&#34;</span>
+
+<span style="color:#a6e22e">describe</span>(<span style="color:#e6db74">&#34;Leanitude&#34;</span>), <span style="color:#66d9ef">function</span>() {
+    <span style="color:#a6e22e">it</span>(<span style="color:#e6db74">&#34;has a cool name&#34;</span>, <span style="color:#66d9ef">function</span>() {
+      <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">LEANITUDE</span>).<span style="color:#a6e22e">toBe</span>(<span style="color:#a6e22e">COOL</span>);
+    })
+}
+
+</code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/posts/applied-devops/" title="Script the world"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/posts/code-coverage/" title="100% Coverage is only the beginning" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1596967680"></script>
+    <script src="/js/perfect-scrollbar.min.js?1596967680"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1596967680"></script>
+    <script src="/js/jquery.sticky.js?1596967680"></script>
+    <script src="/js/featherlight.min.js?1596967680"></script>
+    <script src="/js/highlight.pack.js?1596967680"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1596967680"></script>
+    <script src="/js/learn.js?1596967680"></script>
+    <script src="/js/hugo-learn.js?1596967680"></script>
+
+    <link href="/mermaid/mermaid.css?1596967680" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1596967680"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
