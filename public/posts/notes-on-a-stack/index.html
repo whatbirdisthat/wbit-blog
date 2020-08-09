@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.72.0" />
-    <meta name="description" content="Writing things down helps...">
+    <meta name="description" content="a simple serverless stack">
 <meta name="author" content="David Walters">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>devops :: What Bird Is That?</title>
+    <title>Notes on a stack :: What Bird Is That?</title>
 
     
     <link href="/css/nucleus.css?1596967838" rel="stylesheet">
@@ -54,7 +54,7 @@
 <link rel="stylesheet" href="/sass/wbits.css" />
 
   </head>
-  <body class="" data-url="/categories/devops/">
+  <body class="" data-url="/posts/notes-on-a-stack/">
     <nav id="sidebar" class="">
 
 
@@ -166,7 +166,7 @@
   
     
     <li data-nav-id="/posts/" title="A Blog" class="dd-item 
-        
+        parent
         
         
         ">
@@ -297,7 +297,7 @@
  
   
     
-      <li data-nav-id="/posts/notes-on-a-stack/" title="Notes on a stack" class="dd-item ">
+      <li data-nav-id="/posts/notes-on-a-stack/" title="Notes on a stack" class="dd-item active">
         <a href="/posts/notes-on-a-stack/">
         Notes on a stack
         
@@ -470,7 +470,7 @@
             
           
           
-            <a href='/'>wbits</a> > <a href='/categories/'>Categories</a> > devops
+            <a href='/'>wbits</a> > <a href='/posts/'>A Blog</a> > Notes on a stack
           
         
           
@@ -483,7 +483,18 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#authorised-greeting">Authorised Greeting</a></li>
+    <li><a href="#notes-for-contemplating-a-simple-serverless-workload">Notes for contemplating a simple serverless workload</a>
+      <ul>
+        <li><a href="#a-workloads-maintenance-cycle">A workload&rsquo;s maintenance cycle</a></li>
+        <li><a href="#the-example-workload">The example workload</a></li>
+        <li><a href="#separation-of-duties-for-management-of-the-workload">Separation of duties for management of the workload</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -499,28 +510,146 @@
           
             <h1>
               
-                taxonomy ::
-              
-              devops
+              Notes on a stack
             </h1>
           
 
         
 
 
+<h2 id="authorised-greeting">Authorised Greeting</h2>
+<p>A simple &ldquo;workload&rdquo; for greeting &ldquo;known&rdquo; or &ldquo;unknown&rdquo; visitors to a site.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">In order to enhance the personality of the public web site:
 
+As the business
+I want to greet unauthorised visitors formally
+So that politeness is properly observed
 
-
+As the business
+I want to greet authorised visitors informally
+So camaraderie is enriched
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gherkin" data-lang="gherkin"><span style="color:#a6e22e">
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">Scenario:</span><span style="color:#a6e22e"> users of the API are greeted
+</span><span style="color:#a6e22e">
+</span><span style="color:#a6e22e">    Background:
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">    Given </span><span style="color:#a6e22e">the API is available
+</span><span style="color:#a6e22e">
+</span><span style="color:#a6e22e">    </span><span style="color:#66d9ef">Given </span><span style="color:#a6e22e">a visitor is </span>&lt;auth_level&gt;<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">    </span><span style="color:#66d9ef">* </span><span style="color:#a6e22e">they request a greeting
+</span><span style="color:#a6e22e">    </span><span style="color:#66d9ef">When </span><span style="color:#a6e22e">they are greeted
+</span><span style="color:#a6e22e">    </span><span style="color:#66d9ef">Then </span><span style="color:#a6e22e">the greeting is </span>&lt;greeting&gt;<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">
+</span><span style="color:#a6e22e">    </span><span style="color:#66d9ef">Examples:
+</span><span style="color:#66d9ef">    |</span> auth_level<span style="color:#66d9ef">    |</span> greeting<span style="color:#66d9ef">   |</span><span style="color:#a6e22e">
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">    |</span><span style="color:#e6db74"> unauthorised</span><span style="color:#66d9ef">  |</span><span style="color:#e6db74"> formal</span><span style="color:#66d9ef">     |</span><span style="color:#a6e22e">
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">    |</span><span style="color:#e6db74"> authorised</span><span style="color:#66d9ef">    |</span><span style="color:#e6db74"> informal</span><span style="color:#66d9ef">   |
+</span><span style="color:#66d9ef">
+</span></code></pre></div><h2 id="notes-for-contemplating-a-simple-serverless-workload">Notes for contemplating a simple serverless workload</h2>
+<p>This is a brain dump outlining the minimum required documentation of the
+behaviour of the example workload. In this case, the example workload is a
+simple &ldquo;hello world&rdquo; API, which returns a simple JSON object when queried.</p>
+<p>If the request is &lsquo;authorised&rsquo; the JSON contains some added, &lsquo;sensitive&rsquo; information.</p>
+<p>The example is developed, provisioned, and maintained using AWS tools such as</p>
 <ul>
-	
-		<li><a href="/posts/applied-devops/">Script the world</a></li>
-	
-		<li><a href="/posts/real-blog/">Reliable, Evolving, Agile, Lean</a></li>
-	
+<li>CodeCommit</li>
+<li>CodeBuild</li>
+<li>Cloudformation</li>
+<li>Lambda</li>
+<li>DynamoDB</li>
+<li>S3</li>
+<li>IAM</li>
+<li>KMS</li>
 </ul>
+<h3 id="a-workloads-maintenance-cycle">A workload&rsquo;s maintenance cycle</h3>
+<pre><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+    Participant A as Automation
+    Participant B as Integration
+    Participant C as Production
+    A -&gt;&gt; B: initiation - provision stacks
+    B --&gt; C: implementation - deploy 'workload' to stacks
+    C --x A: iteration - improve infrastructure or application
+
+</code></pre><h3 id="the-example-workload">The example workload</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gherkin" data-lang="gherkin"><span style="color:#a6e22e">As a visitor to the Public Web Site
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">I </span><span style="color:#a6e22e">want to perform &#39;authenticated actions&#39;
+</span><span style="color:#a6e22e">So I can interact with my account
+</span><span style="color:#a6e22e">
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">Given </span><span style="color:#a6e22e">an authenticated user
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">When </span><span style="color:#a6e22e">they request the API &#39;hello&#39;
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">Then </span><span style="color:#a6e22e">the Public Web Site will execute that action
+</span></code></pre></div><pre><code class="language-mermaid" data-lang="mermaid">graph LR
+
+    pws[Public Web Site]
+    guest-only-actions[Guest Only Actions]
+
+    Visitor --&gt; pws
+    pws --&gt; Authentication
+    Authentication --&gt; Authenticated
+    Authentication --&gt; Unauthenticated
+    Authenticated --&gt; RBAC
+    RBAC --&gt; Action
+    Unauthenticated --&gt; RBAC
+    RBAC --- guest-only-actions
+    RBAC --&gt; Audit
+    Audit --&gt; Logging
+    Action --&gt; Logging
 
 
-<footer class=" footline" >
+</code></pre><pre><code class="language-mermaid" data-lang="mermaid">
+sequenceDiagram
+    DEV --&gt; SEC: Collaboration to produce secure, reliable implementation
+    SEC --&gt; OPS: Collaboration to produce secure, reliable infrastructure
+    DEV --&gt; OPS: Feedback from operational readiness testing
+    OPS --&gt; DEV: Feedback from incidents, maintenance, logs
+
+</code></pre><p>To ensure an effective and optimised workflow for maintaining the workload,
+some things should be considered:</p>
+<ul>
+<li>Evolve security in step with application code</li>
+<li>Evolve infrastructure in step with application code</li>
+<li>Including known and emergent security standards</li>
+<li>Providing automated suites to ensure appropriate hardening</li>
+<li>Including known and emergent performance standards</li>
+<li>Respond to incidents with expanded testing</li>
+</ul>
+<h3 id="separation-of-duties-for-management-of-the-workload">Separation of duties for management of the workload</h3>
+<pre><code class="language-mermaid" data-lang="mermaid">graph LR
+    classDef lifecyclePhase fill:#737373
+
+    log-events(Record events that occur throughout &lt;br/&gt;the life of the workload)
+
+    subgraph OPS
+    monitor-cost(Monitor the cost of the workload):::lifecyclePhase
+    monitor-health(Monitor the operational health of the workload)
+    respond-improve(Improve the implementation of the workload&lt;br/&gt; in response to incidents and analytics)
+    end
+
+    subgraph SEC
+    log-audit(Record interactions &lt;br/&gt;with the workload's API)
+    provide-security-tests(Provide an evolving set&lt;br/&gt; of tests to ensure the workload is&lt;br/&gt; secured according to policy)
+    end
+
+    subgraph DEV
+    subgraph IMPLEMENT
+    define(Define / Develop the workload)
+    end
+    subgraph MEASURE
+    measure-performance(Measure the performance &lt;br/&gt; of the workload)
+    end
+    subgraph IMPROVE
+    continuous-improvement(Evolve the workload&lt;br/&gt; and its infrastructure in step)
+    end
+    end
+
+    log-audit --&gt; continuous-improvement
+    respond-improve --&gt; continuous-improvement
+    monitor-cost --&gt; continuous-improvement
+    monitor-health --&gt; continuous-improvement
+
+
+</code></pre>
+
+<footer class="footline">
 	
 </footer>
 
@@ -555,8 +684,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -570,6 +697,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -651,6 +781,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -666,6 +797,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -754,8 +888,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/posts/clean-cloud/" title="Clean Cloud"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/posts/" title="A Blog" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/posts/begin-with-disaster/" title="Begin With Disaster" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -785,3 +921,4 @@
 
   </body>
 </html>
+

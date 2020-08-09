@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>devops :: What Bird Is That?</title>
+    <title>Retro for Value :: What Bird Is That?</title>
 
     
     <link href="/css/nucleus.css?1596967838" rel="stylesheet">
@@ -54,7 +54,7 @@
 <link rel="stylesheet" href="/sass/wbits.css" />
 
   </head>
-  <body class="" data-url="/categories/devops/">
+  <body class="" data-url="/posts/retro-for-value/">
     <nav id="sidebar" class="">
 
 
@@ -166,7 +166,7 @@
   
     
     <li data-nav-id="/posts/" title="A Blog" class="dd-item 
-        
+        parent
         
         
         ">
@@ -192,7 +192,7 @@
  
   
     
-      <li data-nav-id="/posts/retro-for-value/" title="Retro for Value" class="dd-item ">
+      <li data-nav-id="/posts/retro-for-value/" title="Retro for Value" class="dd-item active">
         <a href="/posts/retro-for-value/">
         Retro for Value
         
@@ -470,7 +470,7 @@
             
           
           
-            <a href='/'>wbits</a> > <a href='/categories/'>Categories</a> > devops
+            <a href='/'>wbits</a> > <a href='/posts/'>A Blog</a> > Retro for Value
           
         
           
@@ -483,7 +483,18 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#retrospectives-and-the-tightest-possible-feedback-loop">Retrospectives and the Tightest Possible Feedback Loop</a>
+      <ul>
+        <li><a href="#signals-of-imbalance">Signals of imbalance</a></li>
+        <li><a href="#no-more-meetings">No more meetings</a></li>
+        <li><a href="#making-it-work">Making it work</a></li>
+        <li><a href="#single-piece-flow">Single Piece Flow</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -499,28 +510,92 @@
           
             <h1>
               
-                taxonomy ::
-              
-              devops
+              Retro for Value
             </h1>
           
 
         
 
 
+<h2 id="retrospectives-and-the-tightest-possible-feedback-loop">Retrospectives and the Tightest Possible Feedback Loop</h2>
+<p>Retrospectives that happen infrequently, say every 6 weeks are less effective primarily due to the amount of time spent &ldquo;doing it wrong&rdquo;.</p>
+<p>These habits become so ingrained and taken for granted that by the time retrospective comes around, the team is highly reluctant to change the way they are working and try to push back on any (now major) changes to the way of working that will cause a momentary stoppage in the flow of work.</p>
+<p>It is this reluctance to take the time to re-evaluate the flow, to &ldquo;slow down to speed up&rdquo; that causes the inevitable spiral towards ever increasing velocity losses, build up of escaped bugs, bottlenecks and prioritisation errors characteristic of under-performing teams.</p>
+<h3 id="signals-of-imbalance">Signals of imbalance</h3>
+<p>Teams which, on paper, are staffed with highly capable and well-respected individuals. It is no one-person&rsquo;s fault - it is the fault of an approach to team strategy and the failure to use appropriate metrics to signal corrections in course that will allow flow to return to expected velocities.</p>
+<p>But how to identify these signals? By the time management recognises the failures of a given team to deliver value to the customer in a prompt, efficient and profitable way, it&rsquo;s easy to start apportioning blame. The problem lies with the vendor. The problem is with the iteration manager. The team is too immature. The product owner is stuffing too much work into the backlog. QA is failing to find bugs.</p>
+<p>What if all of these things are true, but they are in fact not the <strong>reason</strong> the team is running so slowly? What if there was a way to compress the time spent <em>actually doing the work</em> into manageable chunks of time, without interruption and with an appropriate division of work items that catered to the three pillars of value: Features, Risks, Debt.</p>
+<p>Instead of the traditional trade-offs where the product owner (the business representative for the team) is forced to schedule defect-fixing over risk-reduction or technical debt before features - what if the strictest of adherence was paid to the balanced allocation of work items for the three pillars?</p>
+<p>Instead of applying pressure to developers to ship code more quickly or to the QAs to verify newly released features, what if developers were encouraged to spend extra time to ensure their code was thoroughly, and <em>provably</em> tested? What if QA was encouraged not only to automate the &ldquo;usual&rdquo; tests around a given feature, but encouraged to spend <strong>extra time</strong> to explore each item of work and apply creative, imaginative and rigorous techniques to break the build.</p>
+<p>What if a broken build was a thing to be <strong>celebrated</strong>? What if the person who broke the build was given the time and space, support and attention to really know what it was that caused the broken build in the first place? And, if the person who broke the build was a QA - what if the development team developed a creative way to catch that in their unit tests, patternised it - <strong>learned from it</strong>?</p>
+<p>Surely this sounds like a very bogged down process?</p>
+<p>But what if this was the <strong>only</strong> process? What if <strong>every work item had its own retrospective</strong>?</p>
+<p>This is the tightest feedback loop I can think of right now. It is these learnings that, once a week, are presented to the team for wider discussion and learning, incorporation into the way of working.</p>
+<p>So the question remains, with all these ceremonies, is there any time for the actual work?</p>
+<h3 id="no-more-meetings">No more meetings</h3>
+<p>Given the following iteration plan:</p>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Actor</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>PO</td>
+<td>Selects one work item from each pillar, to commence on day 1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>ALL</td>
+<td>Retrospective, lightning talks, sprint goal, 3A organisation</td>
+</tr>
+<tr>
+<td>0</td>
+<td>IM</td>
+<td>Assigns work items to 3-amigos for kickoff</td>
+</tr>
+<tr>
+<td>1</td>
+<td>3A</td>
+<td>Work item kicks off, 3A in high-bandwidth collaboration</td>
+</tr>
+<tr>
+<td>1+</td>
+<td>3A</td>
+<td>Work item ships, retro</td>
+</tr>
+<tr>
+<td>2+</td>
+<td>3A</td>
+<td>Applies learnings, writes enablement code, pays debt</td>
+</tr>
+<tr>
+<td>2++</td>
+<td>PO</td>
+<td>Selects one work item from the next pillar for each idle team</td>
+</tr>
+</tbody>
+</table>
+<p>With a standup at the earliest convenient time for the team each morning as the only collective touchpoint and all other &ldquo;meetings&rdquo; are actually 3 Amigos tactical squads who are pairing on code, clarifying requirements, feeding back to PO, communicating with dependencies (until all external dependencies are brought into the 3A organisation - one-big-team) and spending equal time working on the three-pillars&rsquo; aspects to any given feature.</p>
+<p>Applying all three pillars to every feature seems like wasteful recursion, but in fact it is this triple checking that ensures each feature is appropriately weighted with each of the value pillars before it ships.</p>
+<p>What this does is <em>reduce</em> the accumulation of Debt work items, and is a limiting factor on the Risk work items. The Big-Ticket work items are effectively sliced and grafted into every new feature, thus ensuring each of the three pillars is address from a macro and a micro perspective.</p>
+<p>To make all of this work, a profound and breaking change to the way a team works is required. This is not capital-A Agile, this is not Devops, nor is it specifically Lean Thinking. It is a focused and tightly woven sequencing of play that takes each work item as a unit of flow, and applies the SERVICE_TEMPLATE pattern to it.</p>
+<p>This has been inspired by the Flow Framework, and the three pillars of value are either stolen, misused or re-shaped from there.</p>
+<h3 id="making-it-work">Making it work</h3>
+<p>The only way to get a team of any size adjusted to this kind of completely foreign construct is to spend some time in simulation.</p>
+<p>Simulation is the playing of games. Games bring the element of sport, friendly competition and helpfulness that accompanies low-stakes activities.</p>
+<p>Simulating the iteration plan outlined above is simple when applied to any number of traditional flow games.</p>
+<p>Folding paper aeroplanes, the beer game, even the game from The Goal. These simple games with (the fewer the better) simple rules are easy to understand but difficult to master. It is with the application of the plan outlined above that the team will start to learn how to operate in this new way, and grow used to it without the pressure of production, the constant increase in the actual duration of a given item of work from its estimation.</p>
+<h3 id="single-piece-flow">Single Piece Flow</h3>
+<p>It does not make sense to use estimation to plan a set of work items for a given &ldquo;sprint&rdquo;. This turns the estimation into a deadline, no matter how it is framed. Once there is a deadline, pressure forms around the item of work. That pressure causes cracks to form in the veneer of quality and debt will accrue as less time is spent thinking about how the item of work would be designed for the future. Security is overlooked in favour of convenience, and bugs escape to production.</p>
+<p>Instead, feeding items of work one at a time, allows the team to feel relaxed and valued. They are not being questioned about &ldquo;how long&rdquo; and &ldquo;why is it not done yet&rdquo; because no single item of work is resting on a single person&rsquo;s shoulders - it is the 3 Amigos construct that allows the responsibility to be shared and therefore each player is able to step in when another is starting to lose momentum (either tiredness, knowledge gap, screaming kids) and fire up fresh engines. This is made possible by all 3 Amigos being allowed to focus on a single item of work.</p>
 
 
-
-<ul>
-	
-		<li><a href="/posts/applied-devops/">Script the world</a></li>
-	
-		<li><a href="/posts/real-blog/">Reliable, Evolving, Agile, Lean</a></li>
-	
-</ul>
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -555,8 +630,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -570,6 +643,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -586,6 +660,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -754,8 +831,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/posts/" title="A Blog"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/posts/" title="A Blog" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/posts/you-are-valued/" title="You Are Valued" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -785,3 +864,4 @@
 
   </body>
 </html>
+

@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
     <copyright>Copyright © 2020, David Walters.</copyright>
-    <lastBuildDate>Sat, 01 Aug 2020 15:52:03 +1000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 17:58:45 +1000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Retro for Value</title>
+      <link>/posts/retro-for-value/</link>
+      <pubDate>Sat, 08 Aug 2020 17:58:45 +1000</pubDate>
+      
+      <guid>/posts/retro-for-value/</guid>
+      <description>Retrospectives and the Tightest Possible Feedback Loop Retrospectives that happen infrequently, say every 6 weeks are less effective primarily due to the amount of time spent &amp;ldquo;doing it wrong&amp;rdquo;.
+These habits become so ingrained and taken for granted that by the time retrospective comes around, the team is highly reluctant to change the way they are working and try to push back on any (now major) changes to the way of working that will cause a momentary stoppage in the flow of work.</description>
+    </item>
+    
+    <item>
+      <title>You Are Valued</title>
+      <link>/posts/you-are-valued/</link>
+      <pubDate>Sun, 02 Aug 2020 13:50:50 +1000</pubDate>
+      
+      <guid>/posts/you-are-valued/</guid>
+      <description>Sincerity is meaningless In today&amp;rsquo;s workplace, a lot of emphasis is placed on the wellbeing of workers. In fact, workers are not supposed to be called workers. Resources are people, people are participants.
+When this kind of cultural shift is applied across the social spectrum of an organisation, the effects are widespread - not all of them are the expected outcomes of inspiration, motivation, equality, safety.
+There are negative effects too, dangerous effects to productivity.</description>
+    </item>
     
     <item>
       <title>Retro Is Broken</title>
@@ -20,6 +41,52 @@
       <guid>/posts/retro-is-broken/</guid>
       <description>Delivery teams are focusing on the Wrong Things I have participated in more Retrospectives than I can count. Years and years of working with dev teams has given me an insight into some antipatterns which are causing the failure of not just continuous improvement, but are causing teams to actually diminish their effectiveness and productivity.
 Antipattern #1 : It&amp;rsquo;s all about US So many times I have seen super-awesome change-agents, transformation coaches, Agile leaders, practice leads (and more) who are playing the &amp;ldquo;popularity contest&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Sensible Product Development</title>
+      <link>/posts/sensible-product-development/</link>
+      <pubDate>Tue, 07 Jul 2020 15:22:59 +1000</pubDate>
+      
+      <guid>/posts/sensible-product-development/</guid>
+      <description>Why is the quality of the product not the prime selling point? During the sale, it&amp;rsquo;s obvious that presenting a list of highlights showing how awesome the product is will go a long way to generating a positive response.
+However - when selling into a business, the product itself isn&amp;rsquo;t the only factor.
+When selling a product into a business, you may be selling the partnership.</description>
+    </item>
+    
+    <item>
+      <title>Clean Cloud</title>
+      <link>/posts/clean-cloud/</link>
+      <pubDate>Mon, 29 Jun 2020 22:22:51 +1000</pubDate>
+      
+      <guid>/posts/clean-cloud/</guid>
+      <description>A set of OKRs that can be easily assimilated into an enterprise IT culture Enterprise IT is rife with litter.
+There are EC2 instances running for months, called TEST001.
+There are S3 buckets with no objects in them, that have no tags.
+There are entire features without a single automated test.
+There are items of work that do not have adequate acceptance criteria.
+There are overprovisioned servers, long-running environments, bloated taxonomies &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Notes on a stack</title>
+      <link>/posts/notes-on-a-stack/</link>
+      <pubDate>Fri, 15 May 2020 09:23:22 +1000</pubDate>
+      
+      <guid>/posts/notes-on-a-stack/</guid>
+      <description>Authorised Greeting A simple &amp;ldquo;workload&amp;rdquo; for greeting &amp;ldquo;known&amp;rdquo; or &amp;ldquo;unknown&amp;rdquo; visitors to a site.
+In order to enhance the personality of the public web site: As the business I want to greet unauthorised visitors formally So that politeness is properly observed As the business I want to greet authorised visitors informally So camaraderie is enriched Scenario:users of the API are greeted Background: Given the API is available Given a visitor is &amp;lt;auth_level&amp;gt;* they request a greeting When they are greeted Then the greeting is &amp;lt;greeting&amp;gt;Examples: | auth_level| greeting||unauthorised|formal||authorised|informal| Notes for contemplating a simple serverless workload This is a brain dump outlining the minimum required documentation of the behaviour of the example workload.</description>
+    </item>
+    
+    <item>
+      <title>Begin With Disaster</title>
+      <link>/posts/begin-with-disaster/</link>
+      <pubDate>Mon, 11 May 2020 01:28:44 +1000</pubDate>
+      
+      <guid>/posts/begin-with-disaster/</guid>
+      <description>Automate the ability to restore the system from completely nothing In creating a software delivery flow it can be easy to overlook the test-first approach in favour of &amp;ldquo;getting something up and running&amp;rdquo;.
+This is characterised as &amp;ldquo;business-pressure&amp;rdquo; or &amp;ldquo;time-to-market&amp;rdquo; but neglects a key NFR of most commercially-critical software.
+Disaster Recovery When a new feature (or set of features, eg. a CQRS microservices on k8s) is kicked off, resisting the pressure to deliver a flimsy facade showing some fake data can unlock the more potent business value of disaster recovery.</description>
     </item>
     
     <item>

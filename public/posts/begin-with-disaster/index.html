@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.72.0" />
-    <meta name="description" content="Writing things down helps...">
+    <meta name="description" content="a rant about the way money is wasted">
 <meta name="author" content="David Walters">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>devops :: What Bird Is That?</title>
+    <title>Begin With Disaster :: What Bird Is That?</title>
 
     
     <link href="/css/nucleus.css?1596967838" rel="stylesheet">
@@ -54,7 +54,7 @@
 <link rel="stylesheet" href="/sass/wbits.css" />
 
   </head>
-  <body class="" data-url="/categories/devops/">
+  <body class="" data-url="/posts/begin-with-disaster/">
     <nav id="sidebar" class="">
 
 
@@ -166,7 +166,7 @@
   
     
     <li data-nav-id="/posts/" title="A Blog" class="dd-item 
-        
+        parent
         
         
         ">
@@ -318,7 +318,7 @@
  
   
     
-      <li data-nav-id="/posts/begin-with-disaster/" title="Begin With Disaster" class="dd-item ">
+      <li data-nav-id="/posts/begin-with-disaster/" title="Begin With Disaster" class="dd-item active">
         <a href="/posts/begin-with-disaster/">
         Begin With Disaster
         
@@ -470,7 +470,7 @@
             
           
           
-            <a href='/'>wbits</a> > <a href='/categories/'>Categories</a> > devops
+            <a href='/'>wbits</a> > <a href='/posts/'>A Blog</a> > Begin With Disaster
           
         
           
@@ -483,7 +483,12 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#automate-the-ability-to-restore-the-system-from-completely-nothing">Automate the ability to restore the system from completely nothing</a></li>
+    <li><a href="#disaster-recovery">Disaster Recovery</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -499,28 +504,40 @@
           
             <h1>
               
-                taxonomy ::
-              
-              devops
+              Begin With Disaster
             </h1>
           
 
         
 
 
+<h2 id="automate-the-ability-to-restore-the-system-from-completely-nothing">Automate the ability to restore the system from completely nothing</h2>
+<p>In creating a software delivery flow it can be easy to overlook the test-first
+approach in favour of &ldquo;getting something up and running&rdquo;.</p>
+<p>This is characterised as &ldquo;business-pressure&rdquo; or &ldquo;time-to-market&rdquo; but neglects
+a key NFR of most commercially-critical software.</p>
+<h2 id="disaster-recovery">Disaster Recovery</h2>
+<p>When a new feature (or set of features, eg. a CQRS microservices on k8s) is
+kicked off, resisting the pressure to deliver a flimsy facade showing some fake
+data can unlock the more potent business value of <strong>disaster recovery</strong>.</p>
+<p>Say I have a set of APIs that are to be deployed into the container runtime
+and their UI effect is to show a list of blog posts. This list is to be obtained
+from a data store, and served to a client such as a web client or another API.</p>
+<p>Traditionally (or maybe just <em>a lot</em>) the work would commence with the creation
+of the API projects and they would be developed against Postman or maybe a
+selenium/BDD style acceptance project.</p>
+<p>In the crazy new world of devops the things, implementing disaster recovery
+<em>first</em> makes a lot of sense.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gherkin" data-lang="gherkin"><span style="color:#66d9ef">Given </span><span style="color:#a6e22e">The first &#34;</span><span style="color:#e6db74">disaster</span><span style="color:#a6e22e">&#34;:
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">When </span><span style="color:#a6e22e">The feature is entirely missing
+</span><span style="color:#a6e22e"></span><span style="color:#66d9ef">Then </span><span style="color:#a6e22e">the Feature must be delivered
+</span></code></pre></div><p>This should cause the designers and engineers to re-frame the initial scope
+towards infrastructure-as-code, pipelines-as-code etc &ndash; in the event of a
+disaster, these scripts would be the thing that is to be run again, to set up
+the services again.</p>
 
 
-
-<ul>
-	
-		<li><a href="/posts/applied-devops/">Script the world</a></li>
-	
-		<li><a href="/posts/real-blog/">Reliable, Evolving, Agile, Lean</a></li>
-	
-</ul>
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -555,8 +572,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -570,6 +585,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -667,6 +685,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -682,6 +701,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -754,8 +776,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/posts/notes-on-a-stack/" title="Notes on a stack"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/posts/" title="A Blog" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/posts/test-is-a-four-letter-word/" title="TEST is a four letter word." style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -785,3 +809,4 @@
 
   </body>
 </html>
+
