@@ -1,20 +1,20 @@
 baseURL = "/"
-languageCode = "en-au"
-title = "What Bird Is That?"
 copyright = "Copyright © 2020, David Walters."
+languageCode = "en-au"
 #theme = "m10c"
 theme = "hugo-theme-learn"
+title = "What Bird Is That?"
 #theme = "hugo-book-7"
 
 # pygmentsCodeFences = true
 # pygmentsStyle = "monokailight"
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir= false
+defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = false
 
-MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
+MetaDataFormat = "yaml"
 # SectionPagesMenu = "main"
 # Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
 # googleAnalytics = ""
@@ -23,35 +23,34 @@ DefaultContentLanguage = "en"
 # pygmentsUseClasses=true
 
 [params]
-  author = "David Walters"
-  description = "Writing things down helps..."
-  keywords = "hugo blog"
-  useAvatar = false
-  avatar = "1F426.svg"
-  microBlogSection = "posts"
-  displayMicroBlog = true
-  displayRecent = true
-  recentMax = 8
-  mail = "mail@example.com"
-  phone = "8888888888"
-  formspreeID = "yourformspreeID"
-  recent_posts_number = 2
+author = "David Walters"
+avatar = "1F426.svg"
+description = "Writing things down helps..."
+displayMicroBlog = true
+displayRecent = true
+formspreeID = "yourformspreeID"
+keywords = "hugo blog"
+mail = "mail@example.com"
+microBlogSection = "posts"
+phone = "8888888888"
+recentMax = 8
+recent_posts_number = 2
+useAvatar = false
 
-  # editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
-  # showVisitedLinks = true # default is false
-  # themeStyle = "flex" # "original" or "flex" # default "flex"
-  # themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
-  # ordersectionsby = "weight" # ordersectionsby = "title"
-  # disableHomeIcon = false # default is false
-  # disableSearch = false # default is false
-  # disableNavChevron = false # set true to hide next/prev chevron, default is false
-  # highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
-  # menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
-  # enableGitInfo = true
+# editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+# showVisitedLinks = true # default is false
+# themeStyle = "flex" # "original" or "flex" # default "flex"
+# themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
+# ordersectionsby = "weight" # ordersectionsby = "title"
+# disableHomeIcon = false # default is false
+# disableSearch = false # default is false
+# disableNavChevron = false # set true to hide next/prev chevron, default is false
+# highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+# menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+# enableGitInfo = true
 
 # [outputs]
 # home = [ "HTML", "RSS", "JSON"]
-
 
 # [[menu.shortcuts]]
 # pre = "<h3>More</h3>"
@@ -76,13 +75,10 @@ DefaultContentLanguage = "en"
 # url = "/credits"
 # weight = 30
 
-
-
 # [sitemap]
 #   changefreq = "monthly"
 #   priority = 0.5
 #   filename = "sitemap.xml"
-
 
 # [params]
 #   favicon = ""
