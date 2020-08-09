@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on What Bird Is That?</title>
+    <link>/posts/</link>
+    <description>Recent content in Blog on What Bird Is That?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright © 2020, David Walters.</copyright>
+    <lastBuildDate>Wed, 27 May 2020 04:34:00 +1000</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>/posts/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>the ultimate list of vscode extensions</title>
+      <link>/posts/ultimate-vscode-extension-list/</link>
+      <pubDate>Wed, 27 May 2020 04:34:00 +1000</pubDate>
+      
+      <guid>/posts/ultimate-vscode-extension-list/</guid>
+      <description>The ultimate list of VS Code Extensions  aaron-bond.better-comments adpyke.codesnap akmittal.hugofy AlanWalk.markdown-toc alefragnani.Bookmarks alefragnani.project-manager alexkrechik.cucumberautocomplete amazonwebservices.aws-toolkit-vscode aprilandjan.ascii-tree-generator arcsine.chronicler ArgyleWolfLabs.vscode-groovy Atishay-Jain.All-Autocomplete auchenberg.vscode-browser-preview austin.code-gnu-global aws-amplify.aws-amplify-vscode aws-scripting-guy.cform bajdzis.vscode-database be5invis.toml bibhasdn.unique-lines bierner.emojisense bierner.github-markdown-preview bierner.markdown-checkbox bierner.markdown-emoji bierner.markdown-mermaid bierner.markdown-preview-github-styles bierner.markdown-yaml-preamble blackmist.LinkCheckMD bpruitt-goddard.mermaid-markdown-syntax-highlighting budparr.language-hugo-vscode bungcip.better-toml christian-kohler.npm-intellisense christian-kohler.path-intellisense chrmarti.regex CodeStream.codestream codezombiech.gitignore CoenraadS.bracket-pair-colorizer CoenraadS.bracket-pair-colorizer-2 cssho.vscode-svgviewer ctf0.macros DanielThielking.aws-cloudformation-yaml darkriszty.markdown-table-prettify DavidAnson.vscode-markdownlint dawhite.mustache dbaeumer.jshint dbaeumer.vscode-eslint DmitryDorofeev.empty-indent docsmsft.docs-article-templates docsmsft.docs-authoring-pack docsmsft.docs-images docsmsft.docs-linting docsmsft.docs-markdown docsmsft.docs-metadata docsmsft.docs-preview docsmsft.docs-yaml donjayamanne.githistory DotJoshJohnson.xml eamodio.gitlens EditorConfig.EditorConfig eg2.vscode-npm-script esbenp.prettier-vscode evilz.vscode-reveal fabiospampinato.vscode-todo-plus felipecaputo.</description>
+    </item>
+    
+    <item>
+      <title>TEST is a four letter word.</title>
+      <link>/posts/test-is-a-four-letter-word/</link>
+      <pubDate>Fri, 11 Nov 2016 18:20:00 +1000</pubDate>
+      
+      <guid>/posts/test-is-a-four-letter-word/</guid>
+      <description>These days it is so easy to tie ourselves up in knots with one simple word. Testing is something that ought to be a part of the fabric of the delivery cycle, the skein of the SDLC.
+Analysts should be testing their requirements against both the business and the delivery teams, frequently asking &amp;ldquo;is this what you want?&amp;rdquo; and &amp;ldquo;can you build this?&amp;rdquo; so as to gain rapid feedback about the direction they are leading the software.</description>
+    </item>
+    
+    <item>
+      <title>Considerate Data Collection</title>
+      <link>/posts/data-collection/</link>
+      <pubDate>Wed, 17 Aug 2016 14:20:55 +1000</pubDate>
+      
+      <guid>/posts/data-collection/</guid>
+      <description>Considerate Data Collection Isolating the task of collection. Survey data has some interesting properties, when you look at it up close. Survey data has a .size property, which is the (eventual?) size of the collection, called a population or sample. A population can be obtained from 1..n samples.</description>
+    </item>
+    
+    <item>
+      <title>Script the world</title>
+      <link>/posts/applied-devops/</link>
+      <pubDate>Fri, 22 Jul 2016 14:20:55 +1000</pubDate>
+      
+      <guid>/posts/applied-devops/</guid>
+      <description>Applied Devops Script the world Software entities typically evolve through a common set of phases:
+ 1. Design 2. Construct 3. Race 4. Crash 5. Repair 6. goto 3 Early devops used the scripting of infrastructure to propel software at low friction and low variance, achieving unprecedented levels of control and reliability.
+Devops reaches further than just the infra team. It connects all disciplines  Devops thinking brought &amp;lsquo;master == prod&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>Reliable, Evolving, Agile, Lean</title>
+      <link>/posts/real-blog/</link>
+      <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/real-blog/</guid>
+      <description>./realblog Reliable Evolving Agile Lean  Warning: Star Wars Quotes
+ Software that survives. A lot of software today is not given a chance to survive. It&amp;rsquo;s written up, posted on the web, and taken down all within days. This kind of code is &amp;lsquo;firefly code&amp;rsquo; and sometimes that&amp;rsquo;s what we need to get our message across. We know it&amp;rsquo;s only just barely working. We have factored that into our plan.</description>
+    </item>
+    
+    <item>
+      <title>!00% Coverage is only the beginning</title>
+      <link>/posts/code-coverage/</link>
+      <pubDate>Fri, 15 Jul 2016 14:20:55 +1000</pubDate>
+      
+      <guid>/posts/code-coverage/</guid>
+      <description>100% Coverage is only the beginning Code coverage gives us a solid foundation for delivery confidence, but it&amp;rsquo;s not the only way to boost delivery confidence. Confidence: the goal of a quality-focused delivery team. Code confidence is attained through rigorous and frequently repeated testing of the system against a raft of behavioural expectations.
+These expectations form the specifications of the system and in fact document the system: both the functioning system, and the desires of the business that commissioned the system.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/goisforlovers/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
+This document is a brief primer on using Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+  </channel>
+</rss>
