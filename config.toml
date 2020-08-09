@@ -2,8 +2,9 @@ baseURL = "/"
 languageCode = "en-au"
 title = "What Bird Is That?"
 copyright = "Copyright © 2020, David Walters."
-theme = "m10c"
-
+#theme = "m10c"
+theme = "hugo-theme-learn"
+#theme = "hugo-book-7"
 
 # pygmentsCodeFences = true
 # pygmentsStyle = "monokailight"
@@ -52,28 +53,28 @@ DefaultContentLanguage = "en"
 # home = [ "HTML", "RSS", "JSON"]
 
 
-[[menu.shortcuts]]
-pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> <label>Github repo</label>"
-identifier = "ds"
-url = "https://github.com/vjeantet/hugo-theme-docdock"
-weight = 10
+# [[menu.shortcuts]]
+# pre = "<h3>More</h3>"
+# name = "<i class='fa fa-github'></i> <label>Github repo</label>"
+# identifier = "ds"
+# url = "https://github.com/vjeantet/hugo-theme-docdock"
+# weight = 10
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-cloud-download'></i> <label>Download</label>"
-url = "https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip"
-weight = 11
+# [[menu.shortcuts]]
+# name = "<i class='fa fa-cloud-download'></i> <label>Download</label>"
+# url = "https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip"
+# weight = 11
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> <label>Hugo Documentation</label>"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
+# [[menu.shortcuts]]
+# name = "<i class='fa fa-bookmark'></i> <label>Hugo Documentation</label>"
+# identifier = "hugodoc"
+# url = "https://gohugo.io/"
+# weight = 20
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> <label>Credits</label>"
-url = "/credits"
-weight = 30
+# [[menu.shortcuts]]
+# name = "<i class='fa fa-bullhorn'></i> <label>Credits</label>"
+# url = "/credits"
+# weight = 30
 
 
 

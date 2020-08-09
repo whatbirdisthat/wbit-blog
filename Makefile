@@ -15,7 +15,7 @@ serve:
 	hugo server \
 	-D \
 	--bind 0.0.0.0 \
-	--baseURL http://192.168.56.108:1313 \
+	--baseURL http://10.1.10.7:1313 \
 	--navigateToChanged
 
 clean:
