@@ -1,7 +1,7 @@
 ---
 title: "Protecting Change With 2FA"
 date: 2020-08-15T14:40:44+10:00
-draft: true
+draft: false
 ---
 
 ## Using 2FA to protect mutative actions
