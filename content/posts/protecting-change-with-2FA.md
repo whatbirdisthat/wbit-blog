@@ -18,7 +18,7 @@ Non-mutative actions are not protected using the second factor. These actions, s
 
 The second factor, while not providing complete protection (inasmuch as anything can provide _added_ protection) can be used to warn users that their identity has been proven, and the likelihood of that user performing a naughty action is increased considerably because they used the second factor to confirm their identity to the system.
 
-![Flow Diagram](./images/Protecting-a-CHANGE-with-2FA.svg)
+![Flow Diagram](Protecting-a-CHANGE-with-2FA.svg)
 
 ```mermaid
 
