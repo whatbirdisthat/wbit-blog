@@ -4,5 +4,9 @@
 </style>
 -->
 {{ $style := resources.Get "sass/wbits.scss" | resources.ToCSS }}
-
 <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+{{ $hintstyle := resources.Get "sass/hints-colours.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $hintstyle.Permalink }}" />
+
+<link rel="stylesheet" href="/syntax.css" />

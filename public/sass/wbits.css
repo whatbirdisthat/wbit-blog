@@ -2,9 +2,14 @@
   #body-inner {
     padding-left: 22%;
     padding-right: 22%;
-    font-family: Georgia, "Times New Roman", Times, serif; } }
+    font-family: Georgia, "Times New Roman", Times, serif; }
+    #body-inner div.mermaid {
+      min-width: 200%;
+      margin-left: -50%; } }
 
 @media only screen and (max-width: 1299) {
   #body-inner {
     padding-left: 2%;
-    padding-right: 2%; } }
+    padding-right: 2%; }
+  div.mermaid {
+    min-width: 200%; } }

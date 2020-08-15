@@ -1,6 +1,13 @@
 genchromastyles:
 	hugo gen chromastyles --style=native > static/syntax.css
 
+update-mermaid:
+	curl -L https://unpkg.com/mermaid@latest/dist/mermaid.min.js -o static/mermaid/mermaid.min.js
+
+# get-mermaid-latest-zipball:
+# 	# this won't work on windows
+# 	curl https://api.github.com/repos/mermaid-js/mermaid/releases/latest | grep zipball | awk '{print $2}' | sed 's/"//g' | sed 's/,//'
+
 serve-container:
 	hugo-server \
 	-D \

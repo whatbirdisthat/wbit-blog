@@ -3,6 +3,11 @@
         padding-left: 22%;
         padding-right: 22%;
         font-family: Georgia, "Times New Roman", Times, serif;
+
+        div.mermaid {
+            min-width: 200%;
+            margin-left: -50%;
+        }
     }
 }
 
@@ -10,5 +15,9 @@
     #body-inner {
         padding-left: 2%;
         padding-right: 2%;
+    }
+
+    div.mermaid {
+        min-width: 200%;
     }
 }
