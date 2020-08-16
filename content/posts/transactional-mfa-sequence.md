@@ -6,6 +6,8 @@ draft: false
 
 ## CHANGE action with 2nd Authentication Factor
 
+This sequence is explored in detail in the [Protecting Change With MFA](/posts/protecting-change-with-mfa/) post.
+
 ### 'Happy path' sequence
 
 ```mermaid

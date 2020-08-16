@@ -10,7 +10,7 @@ When deciding whether or not to use transactional MFA to verify the identity of 
 
 {{% notice info %}}Transactional MFA is the __protection of specific actions__ by challenging for a second authentication factor. In general, these are transactional actions such as CHANGE some data. Like, to pay for something, alter a subscription, update a user's address. {{% /notice %}}
 
-There is a level of sophistication (complexity) to transactional MFA that may lead to some appearance of crossover to Authorisation. While authorisation is about allowing certain entities to access a given action based on their role transactional MFA is about increasing the amount of identification required to perform the action.
+There is a level of sophistication (complexity) to transactional MFA that may lead to some appearance of crossover to Authorisation. While authorisation is about allowing certain entities to access a given action based on their role, transactional MFA is about increasing the amount of identification required to perform the action.
 
 For example, to rent a video you probably only need a telephone bill, whereas to buy a big TV on credit you need a drivers' licence and a credit card. Anyone can do these things, they just require more proof of identity.
 
@@ -41,6 +41,10 @@ sequenceDiagram
 
 ```
 
+### A more detailed look at transactional MFA
+
+[A sequence diagram](../transactional-mfa-sequence/) showing the 2nd factor guard in action.
+
 ### Three Tradeoffs of MFA at Login
 
 | Tradeoff   | Status                                                                                                                                                                             |
@@ -57,21 +61,21 @@ With transactional MFA implemented, changes to data are protected against naught
 
 ### READ or COMPUTE are not 'sensitive'
 
-When applying transactional MFA, THE BUSINESS has decided that non-mutative actions are not to be protected using the second factor.
+When applying transactional MFA, non-mutative actions are in general not protected using the second factor. An action such as, `view_account_balance` is not transactional, it is a VIEW. A calculated action, such as `estimated_gas_bill` won't need MFA either.
 
 These actions are protected using the credentials factor alone. Username / password is considered to be sufficient protection for READ and COMPUTE operations, but a second factor is considered necessary to guard against potentially site-wide harm that may be caused by a bad actor exploiting a mutative process.
 
+It depends entirely on the domain of course, a banking application may have much more strict requirements than a utility providing gas, electricity and internet or a fishing club.
+
 ### Nonrepudiation and identity binding
 
-The second factor, while not providing complete protection (it can provide _added_ protection) can be used to warn users that their identity has been proven, and the provability of that user having performed a naughty action is increased considerably because they used the second factor to confirm their identity with the system.
+The second factor will not provide complete protection but it will provide _added_ protection.
 
 A bad actor would have to have compromised both factors to gain access, which ... _might be_ less likely than the account owner being the perpetrator of the naughty thing.
 
 {{% notice warning %}} More identifying factors _should_ increase the likelihood of a verified identity. But they _might_ not. {{% /notice %}}
 
 In this case, the system is presenting a final alert, "are you sure you want to do this?", as a warning _and_ as a means of identification.
-
-[A sequence diagram](../transactional-mfa-sequence/) showing the 2nd factor guard in action.
 
 ### One time MFA - still a threat
 

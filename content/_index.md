@@ -2,4 +2,6 @@
 title: wbits
 ---
 
-{{% children depth="999" %}}
+Welcome to the blog of wbits.
+
+{{% children depth=2 %}}
