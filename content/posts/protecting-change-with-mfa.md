@@ -71,7 +71,7 @@ A bad actor would have to have compromised both factors to gain access, which ..
 
 In this case, the system is presenting a final alert, "are you sure you want to do this?", as a warning _and_ as a means of identification.
 
-[A sequence diagram](../2fa-sequence/) showing the 2nd factor guard in action.
+[A sequence diagram](../transactional-mfa-sequence/) showing the 2nd factor guard in action.
 
 ### One time MFA - still a threat
 
@@ -95,7 +95,7 @@ Security is relaxed somewhat for READ operations. Of course it is still possible
 
 Tradeoff | Status
 ---|---
-|✅ **Security** | If security is the highest concern, it makes sense to have every sensitive action protected by a MFA challenge. Making the system stateless in that sense will be very inconvenient for the user, as they will need to provide the 2nd factor every time the attempt a sensitive action but it will give the most clarity around who is attempting to perform the action.
+|✅ **Security** | If security is the highest concern, it makes sense to have every sensitive action protected by a MFA challenge. Making the system stateless in that sense will be very inconvenient for the user, as they will need to provide the 2nd factor every time they attempt a sensitive action but it will give the most clarity around who is attempting to perform the action.
 |Useability | Useability takes a back-seat to security in this configuration, and each and every time the user wants to perform a sensitive action they must deal with the hassle of providing the 2nd factor. There are some apps that make this easier - but security and convenience are mutually exclusive.
 |Simplicity|It's actually somewhat simpler to implement the stateless MFA for all sensitive actions as there is no requirement to check the state of 2nd factor - it's always in a state of "not provided" for this implementation
 ---
@@ -105,6 +105,8 @@ Tradeoff | Status
 At the end of the day, to 2FA or not to 2FA is the question ultimately answered by the stakeholders - and the better equipped to make that decision they are, the more appropriate to the user base that decision will be.
 
 As with everything, "Ye Muste Use the MFA" or "MFA Suxe" are extreme views, and more often than not the real-world answer is....
+
+There are other implementation concerns too. For example, considering certain RBAC grants are only available to MFA entities. Once the 2nd factor is presented, a raft of new permissions are available, similarly to how we might `sudo` or elevate our role permissions temporarily on a cloud platform.
 
 #### References
 
