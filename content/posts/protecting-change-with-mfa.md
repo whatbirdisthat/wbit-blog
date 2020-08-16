@@ -96,8 +96,6 @@ Tradeoff | Status
 |Simplicity|It's actually somewhat simpler to implement the stateless MFA for all sensitive actions as there is no requirement to check the state of 2nd factor - it's always in a state of "not provided" for this implementation
 ---
 
-
-
 #### The trade-offs are clear. It is a matter of posture and policy
 
 At the end of the day, to 2FA or not to 2FA is the question ultimately answered by the stakeholders - and the better equipped to make that decision they are, the more appropriate to the user base that decision will be.

@@ -1,56 +1,68 @@
 ---
 title: "2FA Sequence"
 date: 2020-08-15T23:15:30+10:00
-draft: true
+draft: false
 ---
 
 ## CHANGE action with 2nd Factor Guard
 
+### 'Happy path' sequence
+
 ```mermaid
 %%{ init: {"theme":"dark"}}%%
 sequenceDiagram
-  participant USER as User
+  participant USER as User1
   participant UI as User Interface
-  participant ACT as User Interaction
   participant API as API
-  participant IDP as Identitity Provider
+  participant IDP as Secure Token Service
   participant BACKEND as Backend System
+  note over USER,API: Authenticated user on 'Home' page.
+  activate UI
   UI ->> USER: DISPLAY "Home"
-  USER ->> ACT: CLICK "Changes"
-  UI ->> USER: DISPLAY "Changes"
-  USER ->> ACT: CLICK "New Change"
-  UI ->> API: SUBMIT CHANGE REQUEST
+  deactivate UI
+  note right of UI: A menu contains<br/>the "Changes" item.
+  USER ->> UI: CLICK "Changes"
+  activate UI
+  UI ->> USER: DISPLAY "Changes Page"
+  deactivate UI
+  USER ->> UI: CLICK "New Change"
+  activate UI
+  UI ->> API: OPTIONS /change-thing
+  deactivate UI
   activate API
-  API -->> IDP: Is User Authenticated?
+  note right of API: CHANGE is a protected <br/> action. Requires <br/> 2nd factor.
+  API ->> UI: HTTP 401
+  activate UI
+  deactivate API
   activate IDP
-  alt "NOT AUTHENTICATED"
-    API ->> IDP: CHALLENGE 2FA
-    IDP -->> USER: DELIVER 2nd FACTOR
-    UI ->> USER: PROMPT 2nd FACTOR
-    USER ->> ACT: ENTER 2nd FACTOR
-    ACT ->> API: AUTHENTICATE
-    API ->> IDP: VALIDATE 2nd FACTOR
-    deactivate IDP
-    alt AUTHENTICATION UNSUCCESSFUL
-        IDP ->> API: RESPOND "INVALID"
-        API ->> UI: Authentication Unsuccessful
-        UI ->> USER: SHOW "Authentication Unsuccessful"
-    end
-  else AUTHENTICATION SUCCESSFUL
-    API ->> BACKEND: SUBMIT CHANGE
-    activate BACKEND
-    BACKEND ->> BACKEND: PROCESS CHANGE
-    alt CHANGE SUCCESSFUL
-        BACKEND ->> API: RESPONSE "SUCCEEDED"
-        API ->> UI: RESPONSE "SUCCEEDED"
-        UI ->> USER: SHOW "Change Successful"
-    else CHANGE UNSUCCESSFUL
-        BACKEND ->> API: RESPONSE "FAILED"
-        deactivate BACKEND
-        API ->> UI: RESPONSE "FAILED"
-        deactivate API
-        UI ->> USER: SHOW "Change Unsuccessful"
-    end
-  end
-
+  UI -->> IDP: Initiate MFA
+  deactivate UI
+  activate IDP
+  IDP -->> USER: Deliver 2nd Factor
+  deactivate IDP
+  activate UI
+  UI ->> USER: SHOW MFA Form
+  deactivate UI
+  USER ->> UI: ENTER 2nd Factor
+  activate UI
+  UI ->> IDP: GET /token?id=User1
+  deactivate UI
+  activate IDP
+  IDP ->> UI: HTTP 200 {token: 'X'}
+  deactivate IDP
+  activate UI
+  UI ->> API: POST /change-thing {token: 'X', change: Object}
+  deactivate UI
+  activate API
+  API ->> BACKEND: POST /change-thing
+  deactivate API
+  activate BACKEND
+  BACKEND ->> API: HTTP 200 { response: Object}
+  activate API
+  deactivate BACKEND
+  API ->> UI: HTTP 200 {state: Object}
+  deactivate API
+  activate UI
+  UI ->> USER: SHOW "Results Page"
+  deactivate UI
 ```
