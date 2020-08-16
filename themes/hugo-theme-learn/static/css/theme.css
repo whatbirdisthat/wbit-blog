@@ -194,9 +194,6 @@ select[multiple="multiple"]:focus {
   fill: #fff;
 }
 .searchbox {
-  display: none;
-}
-.searchbox {
   margin-top: 1rem;
   position: relative;
   border: 1px solid #915eae;

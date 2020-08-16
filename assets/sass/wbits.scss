@@ -1,3 +1,7 @@
+.searchbox {
+    //   display: none;
+}
+
 @media only screen and (min-width: 1300px) {
     #body-inner {
         padding-left: 22%;
@@ -20,4 +24,9 @@
     div.mermaid {
         min-width: 200%;
     }
+}
+
+table thead tr th {
+    font-family: monospace;
+    font-size: small;
 }

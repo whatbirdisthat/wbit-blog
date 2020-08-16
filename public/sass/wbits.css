@@ -13,3 +13,7 @@
     padding-right: 2%; }
   div.mermaid {
     min-width: 200%; } }
+
+table thead tr th {
+  font-family: monospace;
+  font-size: small; }
