@@ -1,10 +1,10 @@
 ---
-title: "2FA Sequence"
+title: "Transactional MFA Sequence"
 date: 2020-08-15T23:15:30+10:00
 draft: false
 ---
 
-## CHANGE action with 2nd Factor Guard
+## CHANGE action with 2nd Authentication Factor
 
 ### 'Happy path' sequence
 

@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A Blog on What Bird Is That?</title><link>/posts/</link><description>Recent content in A Blog on What Bird Is That?</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><copyright>Copyright © 2020, David Walters.</copyright><lastBuildDate>Sat, 15 Aug 2020 14:40:44 +1000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Protecting Change With MFA</title><link>/posts/protecting-change-with-mfa/</link><pubDate>Sat, 15 Aug 2020 14:40:44 +1000</pubDate><guid>/posts/protecting-change-with-mfa/</guid><description>Using transactional MFA to protect mutative actions When deciding whether or not to use transactional MFA to verify the identity of a user the tradeoffs are around implementation security, useability and simplicity.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A Blog on What Bird Is That?</title><link>/posts/</link><description>Recent content in A Blog on What Bird Is That?</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><copyright>Copyright © 2020, David Walters.</copyright><lastBuildDate>Sat, 15 Aug 2020 23:15:30 +1000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Transactional MFA Sequence</title><link>/posts/transactional-mfa-sequence/</link><pubDate>Sat, 15 Aug 2020 23:15:30 +1000</pubDate><guid>/posts/transactional-mfa-sequence/</guid><description>CHANGE action with 2nd Authentication Factor &amp;lsquo;Happy path&amp;rsquo; sequence %%{ init: {&amp;quot;theme&amp;quot;:&amp;quot;dark&amp;quot;}}%%
+sequenceDiagram
+participant USER as User1
+participant UI as User Interface
+participant API as API
+participant IDP as Secure Token Service
+participant BACKEND as Backend System
+note over USER,API: Authenticated user on 'Home' page.
+activate UI
+UI -&amp;gt;&amp;gt; USER: DISPLAY &amp;quot;Home&amp;quot;
+deactivate UI
+note right of UI: A menu contains&amp;lt;br/&amp;gt;the &amp;quot;Changes&amp;quot; item.
+USER -&amp;gt;&amp;gt; UI: CLICK &amp;quot;Changes&amp;quot;
+activate UI
+UI -&amp;gt;&amp;gt; USER: DISPLAY &amp;quot;Changes Page&amp;quot;
+deactivate UI
+USER -&amp;gt;&amp;gt; UI: CLICK &amp;quot;New Change&amp;quot;
+activate UI
+UI -&amp;gt;&amp;gt; API: OPTIONS /change-thing
+deactivate UI
+activate API
+note right of API: CHANGE is a protected &amp;lt;br/&amp;gt; action.</description></item><item><title>Protecting Change With MFA</title><link>/posts/protecting-change-with-mfa/</link><pubDate>Sat, 15 Aug 2020 14:40:44 +1000</pubDate><guid>/posts/protecting-change-with-mfa/</guid><description>Using transactional MFA to protect mutative actions When deciding whether or not to use transactional MFA to verify the identity of a user the tradeoffs are around implementation security, useability and simplicity.
 Transactional MFA is the protection of specific actions by challenging for a second authentication factor. In general, these are transactional actions such as CHANGE some data. Like, to pay for something, alter a subscription, update a user&amp;rsquo;s address.</description></item><item><title>Retro for Value</title><link>/posts/retro-for-value/</link><pubDate>Sat, 08 Aug 2020 17:58:45 +1000</pubDate><guid>/posts/retro-for-value/</guid><description>Retrospectives and the Tightest Possible Feedback Loop Retrospectives that happen infrequently, say every 6 weeks are less effective primarily due to the amount of time spent &amp;ldquo;doing it wrong&amp;rdquo;.
 These habits become so ingrained and taken for granted that by the time retrospective comes around, the team is highly reluctant to change the way they are working and try to push back on any (now major) changes to the way of working that will cause a momentary stoppage in the flow of work.</description></item><item><title>You Are Valued</title><link>/posts/you-are-valued/</link><pubDate>Sun, 02 Aug 2020 13:50:50 +1000</pubDate><guid>/posts/you-are-valued/</guid><description>Sincerity is meaningless In today&amp;rsquo;s workplace, a lot of emphasis is placed on the wellbeing of workers. In fact, workers are not supposed to be called workers. Resources are people, people are participants.
 When this kind of cultural shift is applied across the social spectrum of an organisation, the effects are widespread - not all of them are the expected outcomes of inspiration, motivation, equality, safety.
