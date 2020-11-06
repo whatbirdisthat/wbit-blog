@@ -1,7 +1,7 @@
 ---
 title: "Tributaries to Delta"
 date: 2020-11-05T23:03:48+11:00
-draft: true
+draft: false
 ---
 # Tributaries to Delta
 
