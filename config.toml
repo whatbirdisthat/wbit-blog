@@ -22,6 +22,7 @@ MetaDataFormat = "yaml"
 # enableGitInfo = true
 # pygmentsUseClasses=true
 
+
 enableEmoji = true
 
 [params]
