@@ -9,6 +9,10 @@
 			"activityBar.background": "#333333",
 			"titleBar.activeBackground": "#424242",
 			"titleBar.activeForeground": "#FBFBFB"
-		}
+		},
+		"cSpell.words": [
+			"devops",
+			"kaisen"
+		]
 	}
 }

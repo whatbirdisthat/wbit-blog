@@ -22,6 +22,8 @@ MetaDataFormat = "yaml"
 # enableGitInfo = true
 # pygmentsUseClasses=true
 
+enableEmoji = true
+
 [params]
 author = "What Bird Is That?"
 avatar = "1F426.svg"

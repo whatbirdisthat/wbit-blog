@@ -10,7 +10,7 @@ When deciding whether or not to use transactional MFA to verify the identity of 
 
 {{% notice info %}}Transactional MFA is the __protection of specific actions__ by challenging for a second authentication factor. In general, these are transactional actions such as CHANGE some data. Like, to pay for something, alter a subscription, update a user's address. {{% /notice %}}
 
-There is a level of sophistication (complexity) to transactional MFA that may lead to some appearance of crossover to Authorisation. While authorisation is about allowing certain entities to access a given action based on their role, transactional MFA is about increasing the amount of identification required to perform the action.
+There is a level of sophistication (complexity) to transactional MFA that may lead to the appearance some of crossover to Authorisation. While authorisation is about allowing certain consumers to access a given action based on their role, transactional MFA is about increasing the amount of identification required to perform the action.
 
 For example, to rent a video you probably only need a telephone bill, whereas to buy a big TV on credit you need a drivers' licence and a credit card. Anyone can do these things, they just require more proof of identity.
 
@@ -110,7 +110,7 @@ At the end of the day, to 2FA or not to 2FA is the question ultimately answered 
 
 As with everything, "Ye Muste Use the MFA" or "MFA Suxe" are extreme views, and more often than not the real-world answer is....
 
-There are other implementation concerns too. For example, considering certain RBAC grants are only available to MFA entities. Once the 2nd factor is presented, a raft of new permissions are available, similarly to how we might `sudo` or elevate our role permissions temporarily on a cloud platform.
+There are other implementation concerns too. For example, considering certain RBAC grants are only available to MFA'd consumers. Once the 2nd factor is presented, a raft of new permissions are available, similarly to how we might `sudo` or elevate our role permissions temporarily on a cloud platform.
 
 #### References
 
@@ -121,3 +121,5 @@ Thank you to the writers of these articles:
 [Never Build MFA Again: A Developer's Guide to Transactional MFA](https://developer.okta.com/blog/2020/02/07/transactional-mfa)
 
 [Beginner's Guide to SAML](https://support.okta.com/help/s/article/Beginner-s-Guide-to-SAML?language=en_US)
+
+[Authorization - Wikipedia](https://en.wikipedia.org/wiki/Authorization)
