@@ -41,3 +41,5 @@ a partial on [the theme base html](./themes/m10c/layouts/_default/baseof.html)
 ## Embedding [mermaid](https://mermaid-js.github.io)
 
 To embed the mermaid, see the [mermaid examples](content/posts/mermaid-examples.md)
+
+Amplify is painful. It randomly borks.
